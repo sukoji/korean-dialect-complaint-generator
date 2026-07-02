@@ -1,0 +1,108 @@
+# -*- coding: utf-8 -*-
+"""data/region_pools.json · data/location_pools.json 재생성 스크립트.
+
+배포판에는 원본 대형 파일(지명 마스터 CSV ~118MB, location.json ~294MB)을
+포함하지 않고, 여기서 미리 계산한 경량 풀만 data/ 에 넣는다. 원본을 갱신해
+풀을 다시 만들려면 아래 두 경로를 원본 위치로 지정한 뒤 실행한다.
+
+사용:
+    python tools/build_pools.py \
+        --toponym /path/to/지역별_지명_지역_도로명주소_통합_work.csv \
+        --location /path/to/location.json
+"""
+from __future__ import annotations
+
+import argparse
+import collections
+import json
+import sys
+from pathlib import Path
+
+HERE = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(HERE / "pipeline"))
+import odor_complaint_scenarios as O  # noqa: E402
+
+LOC_CAP = 4000  # 원인추정 위치 풀 권역당 상한
+
+
+def build_region_pools(toponym_csv: str) -> dict:
+    """지명 마스터 CSV → 권역별 place/cause 풀 + place_city 맵.
+
+    _scan_region_pools 와 동일 로직을 원본 CSV에 직접 적용(배포판 _scan_region_pools
+    는 이 결과 JSON을 읽기만 함). 정제 규칙은 pipeline/odor_complaint_scenarios.py
+    의 _clean_place_name / _extract_city_from_loc 참조.
+    """
+    import csv
+
+    place = {k: [] for k in O._REGION_LOC_PAT}
+    cause = {k: [] for k in O._REGION_LOC_PAT}
+    place_city = {k: {} for k in O._REGION_LOC_PAT}
+    with open(toponym_csv, encoding="utf-8") as f:
+        r = csv.reader(f)
+        next(r, None)
+        for row in r:
+            if len(row) < 2:
+                continue
+            name, loc = (row[0] or "").strip(), (row[1] or "").strip()
+            if not name or O._OUT_OF_SCOPE_LOC_RE.search(loc):
+                continue
+            is_place = bool(O._LOC_NAME_OK.search(name)) and not O._LOC_NAME_BAD.search(name)
+            is_cause = bool(O._CAUSE_SRC.search(name)) and not O._CAUSE_BAD.search(name)
+            place_name = O._clean_place_name(name) if is_place else ""
+            if not place_name:
+                is_place = False
+            if not (is_place or is_cause):
+                continue
+            for reg, pat in O._REGION_LOC_PAT.items():
+                if not pat.search(loc):
+                    continue
+                if is_place and len(place[reg]) < O._TOPONYM_PER_REGION_CAP:
+                    place[reg].append(place_name)
+                    if place_name not in place_city[reg]:
+                        city = O._extract_city_from_loc(loc)
+                        if city:
+                            place_city[reg][place_name] = city
+                if is_cause and len(cause[reg]) < O._TOPONYM_PER_REGION_CAP:
+                    cause[reg].append(name)
+                break
+    dedup = lambda v: list(dict.fromkeys(v))
+    return {
+        "place": {k: dedup(v) for k, v in place.items()},
+        "cause": {k: dedup(v) for k, v in cause.items()},
+        "place_city": place_city,
+    }
+
+
+def build_location_pools(location_json: str) -> dict:
+    entries = json.loads(Path(location_json).read_text(encoding="utf-8"))
+    by = collections.defaultdict(list)
+    for e in entries:
+        region = e.get("broad_region", "")
+        name = (e.get("place_name") or "").strip()
+        if region and name and len(by[region]) < LOC_CAP:
+            by[region].append(name)
+    return dict(by)
+
+
+def main() -> None:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--toponym", required=True, help="지명 마스터 CSV 경로")
+    ap.add_argument("--location", required=True, help="location.json 경로")
+    args = ap.parse_args()
+
+    data_dir = HERE / "data"
+    rp = build_region_pools(args.toponym)
+    (data_dir / "region_pools.json").write_text(
+        json.dumps(rp, ensure_ascii=False), encoding="utf-8"
+    )
+    print("region_pools.json:", {k: len(v) for k, v in rp["place"].items()})
+
+    lp = build_location_pools(args.location)
+    (data_dir / "location_pools.json").write_text(
+        json.dumps(lp, ensure_ascii=False), encoding="utf-8"
+    )
+    print("location_pools.json:", {k: len(v) for k, v in lp.items()})
+
+
+if __name__ == "__main__":
+    main()

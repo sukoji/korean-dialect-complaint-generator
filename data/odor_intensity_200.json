@@ -1,0 +1,345 @@
+[
+  {
+    "id": 1,
+    "intensity_category": "간헐적 변동",
+    "intensity_keywords": "심해졌다 약해졌다 반복됨",
+    "relative_intensity": "보통 / 변동성",
+    "trigger_factor": "불규칙 주기"
+  },
+  {
+    "id": 2,
+    "intensity_category": "간헐적 변동",
+    "intensity_keywords": "한동안 약해졌다가 다시 급격히 심해짐",
+    "relative_intensity": "보통 / 변동성",
+    "trigger_factor": "불규칙 주기"
+  },
+  {
+    "id": 3,
+    "intensity_category": "간헐적 변동",
+    "intensity_keywords": "세기가 들쭉날쭉하게 변함",
+    "relative_intensity": "보통 / 변동성",
+    "trigger_factor": "불규칙 주기"
+  },
+  {
+    "id": 4,
+    "intensity_category": "간헐적 변동",
+    "intensity_keywords": "갑자기 심해졌다가 금방 약해짐",
+    "relative_intensity": "보통 / 변동성",
+    "trigger_factor": "불규칙 주기"
+  },
+  {
+    "id": 5,
+    "intensity_category": "간헐적 변동",
+    "intensity_keywords": "10분 간격으로 심해졌다 약해졌다 반복됨",
+    "relative_intensity": "보통 / 변동성",
+    "trigger_factor": "시간 주기 (분 단위)"
+  },
+  {
+    "id": 6,
+    "intensity_category": "간헐적 변동",
+    "intensity_keywords": "한 시간에 여러 번 세졌다 약해졌다 반복됨",
+    "relative_intensity": "보통 / 변동성",
+    "trigger_factor": "시간 주기 (시간 단위)"
+  },
+  {
+    "id": 7,
+    "intensity_category": "기상 조건 연동",
+    "intensity_keywords": "바람이 불기 시작하면 더 심해짐",
+    "relative_intensity": "강함 (심해짐)",
+    "trigger_factor": "기상 (바람)"
+  },
+  {
+    "id": 8,
+    "intensity_category": "기상 조건 연동",
+    "intensity_keywords": "바람이 강한 날 유난히 심해짐",
+    "relative_intensity": "강함 (심해짐)",
+    "trigger_factor": "기상 (바람)"
+  },
+  {
+    "id": 9,
+    "intensity_category": "기상 조건 연동",
+    "intensity_keywords": "바람 방향이 바뀌면 더 심해짐",
+    "relative_intensity": "강함 (심해짐)",
+    "trigger_factor": "기상 (풍향)"
+  },
+  {
+    "id": 10,
+    "intensity_category": "기상 조건 연동",
+    "intensity_keywords": "바람 방향에 따라 세기가 달라짐",
+    "relative_intensity": "보통 / 변동성",
+    "trigger_factor": "기상 (풍향)"
+  },
+  {
+    "id": 11,
+    "intensity_category": "기상 조건 연동",
+    "intensity_keywords": "바람이 불면 심해졌다가 잦아들면 약해짐",
+    "relative_intensity": "보통 / 변동성",
+    "trigger_factor": "기상 (바람)"
+  },
+  {
+    "id": 12,
+    "intensity_category": "기상 조건 연동",
+    "intensity_keywords": "바람이 멎으면 오히려 심해짐",
+    "relative_intensity": "강함 (심해짐)",
+    "trigger_factor": "기상 (바람)"
+  },
+  {
+    "id": 13,
+    "intensity_category": "기상 조건 연동",
+    "intensity_keywords": "비 오기 전에 더 심해짐",
+    "relative_intensity": "강함 (심해짐)",
+    "trigger_factor": "기상 (강우)"
+  },
+  {
+    "id": 14,
+    "intensity_category": "기상 조건 연동",
+    "intensity_keywords": "비 오는 날 평소보다 심해짐",
+    "relative_intensity": "강함 (심해짐)",
+    "trigger_factor": "기상 (강우)"
+  },
+  {
+    "id": 15,
+    "intensity_category": "기상 조건 연동",
+    "intensity_keywords": "비가 그친 뒤 더 심해짐",
+    "relative_intensity": "강함 (심해짐)",
+    "trigger_factor": "기상 (강우)"
+  },
+  {
+    "id": 16,
+    "intensity_category": "기상 조건 연동",
+    "intensity_keywords": "습한 날 더 진하게 느껴짐",
+    "relative_intensity": "강함 (심해짐)",
+    "trigger_factor": "기상 (습도)"
+  },
+  {
+    "id": 17,
+    "intensity_category": "기상 조건 연동",
+    "intensity_keywords": "안개 낀 아침 유난히 심해짐",
+    "relative_intensity": "강함 (심해짐)",
+    "trigger_factor": "기상 (안개)"
+  },
+  {
+    "id": 18,
+    "intensity_category": "기상 조건 연동",
+    "intensity_keywords": "날씨가 맑아지면 약해짐",
+    "relative_intensity": "약함 (감쇄됨)",
+    "trigger_factor": "기상 (날씨 변화)"
+  },
+  {
+    "id": 19,
+    "intensity_category": "상시 일정",
+    "intensity_keywords": "처음부터 비슷한 세기로 유지됨",
+    "relative_intensity": "보통 (일정함)",
+    "trigger_factor": "없음 (일정하게 지속)"
+  },
+  {
+    "id": 20,
+    "intensity_category": "상시 일정",
+    "intensity_keywords": "특별히 심해지거나 약해지지 않음",
+    "relative_intensity": "보통 (일정함)",
+    "trigger_factor": "없음 (일정하게 지속)"
+  },
+  {
+    "id": 21,
+    "intensity_category": "상시 일정",
+    "intensity_keywords": "시간대가 바뀌어도 거의 차이 없음",
+    "relative_intensity": "보통 (일정함)",
+    "trigger_factor": "없음 (일정하게 지속)"
+  },
+  {
+    "id": 22,
+    "intensity_category": "시간대별 변동",
+    "intensity_keywords": "아침에는 약하다가 점심 이후 심해짐",
+    "relative_intensity": "강함 (심해짐)",
+    "trigger_factor": "주간/낮 시간대"
+  },
+  {
+    "id": 23,
+    "intensity_category": "시간대별 변동",
+    "intensity_keywords": "점심 이후 갑자기 심해짐",
+    "relative_intensity": "강함 (심해짐)",
+    "trigger_factor": "주간/낮 시간대"
+  },
+  {
+    "id": 24,
+    "intensity_category": "시간대별 변동",
+    "intensity_keywords": "낮 시간대에 유난히 심해짐",
+    "relative_intensity": "강함 (심해짐)",
+    "trigger_factor": "주간/낮 시간대"
+  },
+  {
+    "id": 25,
+    "intensity_category": "시간대별 변동",
+    "intensity_keywords": "오후 2시경 가장 심해짐",
+    "relative_intensity": "강함 (심해짐)",
+    "trigger_factor": "주간/낮 시간대"
+  },
+  {
+    "id": 26,
+    "intensity_category": "시간대별 변동",
+    "intensity_keywords": "오후에는 심하다가 저녁에 약해짐",
+    "relative_intensity": "약함 (감쇄됨)",
+    "trigger_factor": "주간/낮 시간대"
+  },
+  {
+    "id": 27,
+    "intensity_category": "시간대별 변동",
+    "intensity_keywords": "낮에는 약하다가 저녁에 급격히 심해짐",
+    "relative_intensity": "강함 (심해짐)",
+    "trigger_factor": "저녁/일몰 시간대"
+  },
+  {
+    "id": 28,
+    "intensity_category": "시간대별 변동",
+    "intensity_keywords": "저녁이 되면 더 심해짐",
+    "relative_intensity": "강함 (심해짐)",
+    "trigger_factor": "저녁/일몰 시간대"
+  },
+  {
+    "id": 29,
+    "intensity_category": "시간대별 변동",
+    "intensity_keywords": "해 질 무렵부터 점점 심해짐",
+    "relative_intensity": "강함 (심해짐)",
+    "trigger_factor": "저녁/일몰 시간대"
+  },
+  {
+    "id": 30,
+    "intensity_category": "시간대별 변동",
+    "intensity_keywords": "저녁 8시 이후 더 심해짐",
+    "relative_intensity": "강함 (심해짐)",
+    "trigger_factor": "저녁/일몰 시간대"
+  },
+  {
+    "id": 31,
+    "intensity_category": "시간대별 변동",
+    "intensity_keywords": "밤이 깊어질수록 심해짐",
+    "relative_intensity": "강함 (심해짐)",
+    "trigger_factor": "야간 시간대"
+  },
+  {
+    "id": 32,
+    "intensity_category": "시간대별 변동",
+    "intensity_keywords": "밤 10시 이후 더 심해짐",
+    "relative_intensity": "강함 (심해짐)",
+    "trigger_factor": "야간 시간대"
+  },
+  {
+    "id": 33,
+    "intensity_category": "시간대별 변동",
+    "intensity_keywords": "새벽에 특히 심해짐",
+    "relative_intensity": "강함 (심해짐)",
+    "trigger_factor": "새벽 시간대"
+  },
+  {
+    "id": 34,
+    "intensity_category": "시간대별 변동",
+    "intensity_keywords": "새벽 2시부터 5시 사이 가장 심해짐",
+    "relative_intensity": "강함 (심해짐)",
+    "trigger_factor": "새벽 시간대"
+  },
+  {
+    "id": 35,
+    "intensity_category": "시간대별 변동",
+    "intensity_keywords": "동틀 무렵 약해짐",
+    "relative_intensity": "약함 (감쇄됨)",
+    "trigger_factor": "새벽 시간대"
+  },
+  {
+    "id": 36,
+    "intensity_category": "시간대별 변동",
+    "intensity_keywords": "아침 기상 직후 가장 심해짐",
+    "relative_intensity": "강함 (심해짐)",
+    "trigger_factor": "오전/아침 시간대"
+  },
+  {
+    "id": 37,
+    "intensity_category": "시간대별 변동",
+    "intensity_keywords": "아침 7시경 가장 심했다가 이후 약해짐",
+    "relative_intensity": "약함 (감쇄됨)",
+    "trigger_factor": "오전/아침 시간대"
+  },
+  {
+    "id": 38,
+    "intensity_category": "시간대별 변동",
+    "intensity_keywords": "아침과 저녁에 특히 심해짐",
+    "relative_intensity": "보통 / 변동성",
+    "trigger_factor": "오전/아침 및 저녁 시간대"
+  },
+  {
+    "id": 39,
+    "intensity_category": "시간대별 변동",
+    "intensity_keywords": "오전에는 약하다가 오후에 심해지고 저녁에 다시 약해짐",
+    "relative_intensity": "보통 / 변동성",
+    "trigger_factor": "주간/낮 시간대"
+  },
+  {
+    "id": 40,
+    "intensity_category": "점진적 변동",
+    "intensity_keywords": "처음에는 약하다가 점점 심해짐",
+    "relative_intensity": "강함 (심해짐)",
+    "trigger_factor": "시간 경과"
+  },
+  {
+    "id": 41,
+    "intensity_category": "점진적 변동",
+    "intensity_keywords": "시간이 지날수록 심해짐",
+    "relative_intensity": "강함 (심해짐)",
+    "trigger_factor": "시간 경과"
+  },
+  {
+    "id": 42,
+    "intensity_category": "점진적 변동",
+    "intensity_keywords": "아까보다 지금 더 심해짐",
+    "relative_intensity": "강함 (심해짐)",
+    "trigger_factor": "시간 경과"
+  },
+  {
+    "id": 43,
+    "intensity_category": "점진적 변동",
+    "intensity_keywords": "갑자기 심해짐",
+    "relative_intensity": "강함 (심해짐)",
+    "trigger_factor": "급격한 변화"
+  },
+  {
+    "id": 44,
+    "intensity_category": "점진적 변동",
+    "intensity_keywords": "처음에는 심하다가 점점 약해짐",
+    "relative_intensity": "약함 (감쇄됨)",
+    "trigger_factor": "시간 경과"
+  },
+  {
+    "id": 45,
+    "intensity_category": "점진적 변동",
+    "intensity_keywords": "아까보다 지금 약해짐",
+    "relative_intensity": "약함 (감쇄됨)",
+    "trigger_factor": "시간 경과"
+  },
+  {
+    "id": 46,
+    "intensity_category": "점진적 변동",
+    "intensity_keywords": "시간이 지나면서 조금씩 약해짐",
+    "relative_intensity": "약함 (감쇄됨)",
+    "trigger_factor": "시간 경과"
+  },
+  {
+    "id": 47,
+    "intensity_category": "점진적 변동",
+    "intensity_keywords": "10분 전부터 조금씩 약해짐",
+    "relative_intensity": "약함 (감쇄됨)",
+    "trigger_factor": "시간 경과"
+  },
+  {
+    "id": 48,
+    "intensity_category": "점진적 변동",
+    "intensity_keywords": "한두 시간 뒤 많이 약해짐",
+    "relative_intensity": "약함 (감쇄됨)",
+    "trigger_factor": "시간 경과"
+  },
+  {
+    "id": 49,
+    "intensity_category": "점진적 변동",
+    "intensity_keywords": "갑자기 심해졌다가 현재 약해짐",
+    "relative_intensity": "약함 (감쇄됨)",
+    "trigger_factor": "급격한 변화"
+  }
+]

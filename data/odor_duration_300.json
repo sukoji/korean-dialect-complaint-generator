@@ -1,0 +1,2060 @@
+[
+  {
+    "id": 1,
+    "duration_category": "지속적",
+    "duration_keywords": "오늘 아침 8시부터 지금까지 계속",
+    "onset_time": "오늘 08:00",
+    "estimated_hours": "하루 종일 / 지속"
+  },
+  {
+    "id": 2,
+    "duration_category": "지속적",
+    "duration_keywords": "어제 저녁부터 밤새 내내",
+    "onset_time": "어제 저녁",
+    "estimated_hours": "12시간 이상"
+  },
+  {
+    "id": 3,
+    "duration_category": "지속적",
+    "duration_keywords": "퇴근하고 저녁 6시부터 계속",
+    "onset_time": "어제 18:00",
+    "estimated_hours": "밤새 지속"
+  },
+  {
+    "id": 4,
+    "duration_category": "지속적",
+    "duration_keywords": "하루 종일 끊임없이",
+    "onset_time": "오늘 하루",
+    "estimated_hours": "하루 종일"
+  },
+  {
+    "id": 5,
+    "duration_category": "지속적",
+    "duration_keywords": "아침 7시부터 벌써 몇 시간째",
+    "onset_time": "오늘 07:00",
+    "estimated_hours": "수 시간 지속"
+  },
+  {
+    "id": 6,
+    "duration_category": "지속적",
+    "duration_keywords": "새벽 4시부터 지금까지 계속",
+    "onset_time": "오늘 04:00",
+    "estimated_hours": "6~8시간 이상"
+  },
+  {
+    "id": 7,
+    "duration_category": "지속적",
+    "duration_keywords": "어제 밤부터 밤새 내내",
+    "onset_time": "어제 밤",
+    "estimated_hours": "8시간 이상"
+  },
+  {
+    "id": 8,
+    "duration_category": "지속적",
+    "duration_keywords": "24시간 내내 계속",
+    "onset_time": "상시",
+    "estimated_hours": "24시간 지속"
+  },
+  {
+    "id": 9,
+    "duration_category": "지속적",
+    "duration_keywords": "오전 11시부터 벌써 세 시간째",
+    "onset_time": "오늘 11:00",
+    "estimated_hours": "3시간 이상"
+  },
+  {
+    "id": 10,
+    "duration_category": "지속적",
+    "duration_keywords": "어제 아침부터 오늘도 계속",
+    "onset_time": "어제 아침",
+    "estimated_hours": "24시간 이상"
+  },
+  {
+    "id": 11,
+    "duration_category": "지속적",
+    "duration_keywords": "어젯밤 11시부터 새벽 내내",
+    "onset_time": "어젯밤 23:00",
+    "estimated_hours": "6시간 이상"
+  },
+  {
+    "id": 12,
+    "duration_category": "지속적",
+    "duration_keywords": "새벽 2시부터 아침 8시까지 계속",
+    "onset_time": "어제 02:00",
+    "estimated_hours": "6시간"
+  },
+  {
+    "id": 13,
+    "duration_category": "지속적",
+    "duration_keywords": "비 오는 날만 하루 종일",
+    "onset_time": "강우 시 하루 종일",
+    "estimated_hours": "하루 종일"
+  },
+  {
+    "id": 14,
+    "duration_category": "지속적",
+    "duration_keywords": "낮부터 밤까지 계속",
+    "onset_time": "어제 낮",
+    "estimated_hours": "18시간 이상 (지속)"
+  },
+  {
+    "id": 15,
+    "duration_category": "지속적",
+    "duration_keywords": "오후 4시부터 한 시간 넘게 계속",
+    "onset_time": "오늘 16:00",
+    "estimated_hours": "1시간 이상"
+  },
+  {
+    "id": 16,
+    "duration_category": "지속적",
+    "duration_keywords": "아침 7시 반부터 지금까지 내내",
+    "onset_time": "오늘 07:30",
+    "estimated_hours": "5~6시간 이상"
+  },
+  {
+    "id": 17,
+    "duration_category": "지속적",
+    "duration_keywords": "어제 새벽부터 멈추지 않고 하루 종일",
+    "onset_time": "어제 새벽",
+    "estimated_hours": "하루 종일"
+  },
+  {
+    "id": 18,
+    "duration_category": "지속적",
+    "duration_keywords": "밤새도록 계속",
+    "onset_time": "어제 밤",
+    "estimated_hours": "8시간 이상"
+  },
+  {
+    "id": 19,
+    "duration_category": "지속적",
+    "duration_keywords": "어젯밤부터 지금까지 하루 꼬박 24시간째",
+    "onset_time": "어젯밤",
+    "estimated_hours": "24시간 이상"
+  },
+  {
+    "id": 20,
+    "duration_category": "지속적",
+    "duration_keywords": "낮 12시부터 하루 내내 이어지는 중",
+    "onset_time": "오늘 12:00",
+    "estimated_hours": "하루 종일"
+  },
+  {
+    "id": 21,
+    "duration_category": "지속적",
+    "duration_keywords": "오전 내내",
+    "onset_time": "오늘 오전",
+    "estimated_hours": "4~5시간"
+  },
+  {
+    "id": 22,
+    "duration_category": "지속적",
+    "duration_keywords": "어제 낮 1시경 시작해서 지금까지 끊김 없이",
+    "onset_time": "어제 13:00",
+    "estimated_hours": "24시간 이상"
+  },
+  {
+    "id": 23,
+    "duration_category": "지속적",
+    "duration_keywords": "새벽 내내 지속",
+    "onset_time": "오늘 새벽",
+    "estimated_hours": "5~6시간"
+  },
+  {
+    "id": 24,
+    "duration_category": "지속적",
+    "duration_keywords": "오늘 하루 종일 계속",
+    "onset_time": "오늘 아침",
+    "estimated_hours": "하루 종일"
+  },
+  {
+    "id": 25,
+    "duration_category": "지속적",
+    "duration_keywords": "아침 일찍부터 지금까지 끊임없이 지속 중",
+    "onset_time": "오늘 아침",
+    "estimated_hours": "수 시간 (지속)"
+  },
+  {
+    "id": 26,
+    "duration_category": "지속적",
+    "duration_keywords": "어제 밤 9시부터 현재까지 쉬지 않고 계속됨",
+    "onset_time": "어제 21:00",
+    "estimated_hours": "15시간 이상"
+  },
+  {
+    "id": 27,
+    "duration_category": "지속적",
+    "duration_keywords": "어제 점심때부터 지금까지 내내",
+    "onset_time": "어제 점심",
+    "estimated_hours": "12시간 이상"
+  },
+  {
+    "id": 28,
+    "duration_category": "지속적",
+    "duration_keywords": "오늘 새벽 5시부터 눈 뜰 때부터 지금까지 계속",
+    "onset_time": "오늘 05:00",
+    "estimated_hours": "6~8시간 이상"
+  },
+  {
+    "id": 29,
+    "duration_category": "지속적",
+    "duration_keywords": "오전 9시부터 지금까지 계속",
+    "onset_time": "오늘 09:00",
+    "estimated_hours": "수 시간 지속"
+  },
+  {
+    "id": 30,
+    "duration_category": "지속적",
+    "duration_keywords": "어젯밤 10시경부터 지금까지 내내",
+    "onset_time": "어젯밤 22:00",
+    "estimated_hours": "12시간 이상"
+  },
+  {
+    "id": 31,
+    "duration_category": "지속적",
+    "duration_keywords": "벌써 3일째 계속",
+    "onset_time": "3일 전",
+    "estimated_hours": "3일 이상 지속"
+  },
+  {
+    "id": 32,
+    "duration_category": "지속적",
+    "duration_keywords": "지난주 월요일부터 10일 내내 계속",
+    "onset_time": "10일 전",
+    "estimated_hours": "10일 이상 지속"
+  },
+  {
+    "id": 33,
+    "duration_category": "지속적",
+    "duration_keywords": "일주일째 24시간 내내",
+    "onset_time": "일주일 전",
+    "estimated_hours": "7일 이상 지속"
+  },
+  {
+    "id": 34,
+    "duration_category": "지속적",
+    "duration_keywords": "보름 전부터 내내 계속",
+    "onset_time": "15일 전",
+    "estimated_hours": "15일 이상 지속"
+  },
+  {
+    "id": 35,
+    "duration_category": "지속적",
+    "duration_keywords": "벌써 5일째 계속",
+    "onset_time": "5일 전",
+    "estimated_hours": "5일 이상 지속"
+  },
+  {
+    "id": 36,
+    "duration_category": "지속적",
+    "duration_keywords": "지난 10일 동안 24시간 내내 계속",
+    "onset_time": "10일 전",
+    "estimated_hours": "10일 이상 지속"
+  },
+  {
+    "id": 37,
+    "duration_category": "지속적",
+    "duration_keywords": "벌써 나흘째 한순간도 안 그치고 지속",
+    "onset_time": "4일 전",
+    "estimated_hours": "4일 이상 지속"
+  },
+  {
+    "id": 38,
+    "duration_category": "지속적",
+    "duration_keywords": "지난 일주일 동안 밤낮없이 계속해서 지속",
+    "onset_time": "일주일 전",
+    "estimated_hours": "7일 이상 지속"
+  },
+  {
+    "id": 39,
+    "duration_category": "지속적",
+    "duration_keywords": "최근 2주간 내내",
+    "onset_time": "2주 전",
+    "estimated_hours": "14일 지속"
+  },
+  {
+    "id": 40,
+    "duration_category": "지속적",
+    "duration_keywords": "벌써 일주일 가까이 24시간 내내 쉬지 않고 계속됨",
+    "onset_time": "일주일 전",
+    "estimated_hours": "7일 가까이 지속"
+  },
+  {
+    "id": 41,
+    "duration_category": "지속적",
+    "duration_keywords": "지난 보름간 계속",
+    "onset_time": "15일 전",
+    "estimated_hours": "15일 지속"
+  },
+  {
+    "id": 42,
+    "duration_category": "지속적",
+    "duration_keywords": "최근 3주 동안 24시간 내내 계속",
+    "onset_time": "3주 전",
+    "estimated_hours": "3주 지속"
+  },
+  {
+    "id": 43,
+    "duration_category": "지속적",
+    "duration_keywords": "벌써 6일째 쉼 없이 지속",
+    "onset_time": "6일 전",
+    "estimated_hours": "6일 지속"
+  },
+  {
+    "id": 44,
+    "duration_category": "지속적",
+    "duration_keywords": "지난 2주째 멈추지 않고 계속",
+    "onset_time": "2주 전",
+    "estimated_hours": "14일 이상 지속"
+  },
+  {
+    "id": 45,
+    "duration_category": "지속적",
+    "duration_keywords": "벌써 4일째 24시간 내내 지속",
+    "onset_time": "4일 전",
+    "estimated_hours": "4일 지속"
+  },
+  {
+    "id": 46,
+    "duration_category": "지속적",
+    "duration_keywords": "일주일 전부터 지금까지 쉬지 않고 지속",
+    "onset_time": "일주일 전",
+    "estimated_hours": "7일 지속"
+  },
+  {
+    "id": 47,
+    "duration_category": "지속적",
+    "duration_keywords": "최근 10일간 24시간 내내 계속 이어지는 중",
+    "onset_time": "10일 전",
+    "estimated_hours": "10일 지속"
+  },
+  {
+    "id": 48,
+    "duration_category": "지속적",
+    "duration_keywords": "벌써 3주째 한순간도 안 쉬고 계속",
+    "onset_time": "3주 전",
+    "estimated_hours": "3주 지속"
+  },
+  {
+    "id": 49,
+    "duration_category": "지속적",
+    "duration_keywords": "벌써 며칠째 쉬지 않고 계속",
+    "onset_time": "며칠 전",
+    "estimated_hours": "수 일 지속"
+  },
+  {
+    "id": 50,
+    "duration_category": "지속적",
+    "duration_keywords": "지난 월요일부터 지금까지 일주일 내내 지속",
+    "onset_time": "일주일 전",
+    "estimated_hours": "7일 지속"
+  },
+  {
+    "id": 51,
+    "duration_category": "지속적",
+    "duration_keywords": "최근 5일간 밤새 끊임없이 지속",
+    "onset_time": "5일 전",
+    "estimated_hours": "5일 지속"
+  },
+  {
+    "id": 52,
+    "duration_category": "지속적",
+    "duration_keywords": "벌써 열흘 동안 단 한 시간도 빠짐없이 지속 중",
+    "onset_time": "10일 전",
+    "estimated_hours": "10일 지속"
+  },
+  {
+    "id": 53,
+    "duration_category": "지속적",
+    "duration_keywords": "지난주 화요일부터 벌써 9일 동안 쉬지 않고 지속",
+    "onset_time": "9일 전",
+    "estimated_hours": "9일 지속"
+  },
+  {
+    "id": 54,
+    "duration_category": "지속적",
+    "duration_keywords": "보름 전부터 현재까지 계속해서",
+    "onset_time": "15일 전",
+    "estimated_hours": "15일 지속"
+  },
+  {
+    "id": 55,
+    "duration_category": "지속적",
+    "duration_keywords": "최근 2주 동안 24시간 내내 지속",
+    "onset_time": "2주 전",
+    "estimated_hours": "14일 지속"
+  },
+  {
+    "id": 56,
+    "duration_category": "지속적",
+    "duration_keywords": "벌써 4일 동안 쉬지 않고 지속",
+    "onset_time": "4일 전",
+    "estimated_hours": "4일 지속"
+  },
+  {
+    "id": 57,
+    "duration_category": "지속적",
+    "duration_keywords": "지난 8일간 24시간 끊김 없이 지속 중",
+    "onset_time": "8일 전",
+    "estimated_hours": "8일 지속"
+  },
+  {
+    "id": 58,
+    "duration_category": "지속적",
+    "duration_keywords": "벌써 12일째 지속",
+    "onset_time": "12일 전",
+    "estimated_hours": "12일 지속"
+  },
+  {
+    "id": 59,
+    "duration_category": "지속적",
+    "duration_keywords": "일주일 전부터 지금까지 한시도 쉬지 않고 계속",
+    "onset_time": "일주일 전",
+    "estimated_hours": "7일 지속"
+  },
+  {
+    "id": 60,
+    "duration_category": "지속적",
+    "duration_keywords": "최근 나흘 동안 24시간 내내 지속",
+    "onset_time": "4일 전",
+    "estimated_hours": "4일 지속"
+  },
+  {
+    "id": 61,
+    "duration_category": "지속적",
+    "duration_keywords": "한 달 동안 단 하루도 빠짐없이 지속",
+    "onset_time": "한 달 전",
+    "estimated_hours": "30일 지속"
+  },
+  {
+    "id": 62,
+    "duration_category": "지속적",
+    "duration_keywords": "최근 2주 내내 멈추지 않고 계속",
+    "onset_time": "2주 전",
+    "estimated_hours": "14일 이상 지속"
+  },
+  {
+    "id": 63,
+    "duration_category": "지속적",
+    "duration_keywords": "올해 초부터 지금까지 거의 매일 쉬지 않고 지속",
+    "onset_time": "올해 초",
+    "estimated_hours": "수개월 이상 지속"
+  },
+  {
+    "id": 64,
+    "duration_category": "지속적",
+    "duration_keywords": "3주 전부터 지금까지 끊임없이 지속 중",
+    "onset_time": "3주 전",
+    "estimated_hours": "3주 이상 지속"
+  },
+  {
+    "id": 65,
+    "duration_category": "지속적",
+    "duration_keywords": "한 달 전부터 지금까지 지속",
+    "onset_time": "한 달 전",
+    "estimated_hours": "30일 이상 지속"
+  },
+  {
+    "id": 66,
+    "duration_category": "지속적",
+    "duration_keywords": "수개월 전부터 지금까지 멈춤 없이 계속",
+    "onset_time": "수개월 전",
+    "estimated_hours": "수개월 이상 지속"
+  },
+  {
+    "id": 67,
+    "duration_category": "지속적",
+    "duration_keywords": "작년 말부터 지금까지 거의 끊임없이 계속",
+    "onset_time": "작년 말",
+    "estimated_hours": "수개월 이상 지속"
+  },
+  {
+    "id": 68,
+    "duration_category": "지속적",
+    "duration_keywords": "한 달째 내내 계속",
+    "onset_time": "한 달 전",
+    "estimated_hours": "30일 이상 지속"
+  },
+  {
+    "id": 69,
+    "duration_category": "지속적",
+    "duration_keywords": "한 달 전부터 지금까지 내내 계속",
+    "onset_time": "한 달 전",
+    "estimated_hours": "30일 이상 지속"
+  },
+  {
+    "id": 70,
+    "duration_category": "지속적",
+    "duration_keywords": "한 달 가까이 24시간 내내 지속",
+    "onset_time": "한 달 전",
+    "estimated_hours": "30일 가까이 지속"
+  },
+  {
+    "id": 71,
+    "duration_category": "지속적",
+    "duration_keywords": "올해 봄부터 지금까지 매일 24시간 내내 지속",
+    "onset_time": "올해 봄",
+    "estimated_hours": "수개월 지속"
+  },
+  {
+    "id": 72,
+    "duration_category": "지속적",
+    "duration_keywords": "재작년부터 지금까지 몇 년 동안 멈추지 않고 지속",
+    "onset_time": "재작년",
+    "estimated_hours": "수년 이상 지속"
+  },
+  {
+    "id": 73,
+    "duration_category": "지속적",
+    "duration_keywords": "최근 3달 동안 24시간 쉬지 않고 지속",
+    "onset_time": "3개월 전",
+    "estimated_hours": "3개월 지속"
+  },
+  {
+    "id": 74,
+    "duration_category": "지속적",
+    "duration_keywords": "올해 내내 쉼 없이 계속",
+    "onset_time": "올해 초",
+    "estimated_hours": "수개월 지속"
+  },
+  {
+    "id": 75,
+    "duration_category": "지속적",
+    "duration_keywords": "지난 반년 동안 단 하루도 빠짐없이 지속",
+    "onset_time": "6개월 전",
+    "estimated_hours": "6개월 지속"
+  },
+  {
+    "id": 76,
+    "duration_category": "지속적",
+    "duration_keywords": "작년 여름부터 1년 가까이 24시간 내내 지속",
+    "onset_time": "1년 전",
+    "estimated_hours": "1년 가까이 지속"
+  },
+  {
+    "id": 77,
+    "duration_category": "지속적",
+    "duration_keywords": "최근 4개월째 내내 계속",
+    "onset_time": "4개월 전",
+    "estimated_hours": "4개월 지속"
+  },
+  {
+    "id": 78,
+    "duration_category": "지속적",
+    "duration_keywords": "수개월 전부터 지금까지 끊김 없이 지속",
+    "onset_time": "수개월 전",
+    "estimated_hours": "수개월 지속"
+  },
+  {
+    "id": 79,
+    "duration_category": "지속적",
+    "duration_keywords": "올해 겨울부터 지금까지 반년 동안 멈춤 없이 계속",
+    "onset_time": "6개월 전",
+    "estimated_hours": "6개월 지속"
+  },
+  {
+    "id": 80,
+    "duration_category": "지속적",
+    "duration_keywords": "지난 1년 내내 지속",
+    "onset_time": "1년 전",
+    "estimated_hours": "1년 지속"
+  },
+  {
+    "id": 81,
+    "duration_category": "간헐적",
+    "duration_keywords": "10분 간격으로 끊겼다 이어졌다",
+    "onset_time": "오늘 아침",
+    "estimated_hours": "간헐적 (수 시간)"
+  },
+  {
+    "id": 82,
+    "duration_category": "간헐적",
+    "duration_keywords": "5분 정도 짧게 발생했다가 사라지기를 반복",
+    "onset_time": "오늘 아침",
+    "estimated_hours": "간헐적 (수 초/분 단위)"
+  },
+  {
+    "id": 83,
+    "duration_category": "간헐적",
+    "duration_keywords": "바람 불 때만 한 10분 정도",
+    "onset_time": "기상 조건에 따라",
+    "estimated_hours": "10분 미만 (반복)"
+  },
+  {
+    "id": 84,
+    "duration_category": "간헐적",
+    "duration_keywords": "30분 지속되다가 멈춘 뒤 방금 다시 시작",
+    "onset_time": "오늘 14:00",
+    "estimated_hours": "30분씩 수차례"
+  },
+  {
+    "id": 85,
+    "duration_category": "간헐적",
+    "duration_keywords": "새벽부터 지금까지 드문드문",
+    "onset_time": "오늘 새벽",
+    "estimated_hours": "간헐적 (반나절)"
+  },
+  {
+    "id": 86,
+    "duration_category": "간헐적",
+    "duration_keywords": "30분 정도 짧게 하루 대여섯 번",
+    "onset_time": "간헐적",
+    "estimated_hours": "회당 30분 (하루 5~6회)"
+  },
+  {
+    "id": 87,
+    "duration_category": "간헐적",
+    "duration_keywords": "아침 10시부터 끊겼다 이어졌다 계속",
+    "onset_time": "오늘 10:00",
+    "estimated_hours": "간헐적 (수 시간)"
+  },
+  {
+    "id": 88,
+    "duration_category": "간헐적",
+    "duration_keywords": "낮 12시부터 한두 시간 간격으로 발생과 중단을 반복",
+    "onset_time": "오늘 12:00",
+    "estimated_hours": "간헐적 (오후 시간 내내)"
+  },
+  {
+    "id": 89,
+    "duration_category": "간헐적",
+    "duration_keywords": "낮 12시부터 끊겼다 이어졌다 반복",
+    "onset_time": "오늘 12:00",
+    "estimated_hours": "간헐적 (수 시간)"
+  },
+  {
+    "id": 90,
+    "duration_category": "간헐적",
+    "duration_keywords": "몇 분 주기로 계속 왔다 갔다 함",
+    "onset_time": "오늘 오전",
+    "estimated_hours": "분 단위 간헐적"
+  },
+  {
+    "id": 91,
+    "duration_category": "간헐적",
+    "duration_keywords": "간헐적으로 났다 사라졌다를 반복함",
+    "onset_time": "오늘 낮",
+    "estimated_hours": "간헐적 (수 시간)"
+  },
+  {
+    "id": 92,
+    "duration_category": "간헐적",
+    "duration_keywords": "하루에 대여섯 번씩 드문드문 반복",
+    "onset_time": "오늘 하루",
+    "estimated_hours": "하루 수회 (간헐적)"
+  },
+  {
+    "id": 93,
+    "duration_category": "간헐적",
+    "duration_keywords": "바람 방향이 바뀔 때마다 주기적으로 반복",
+    "onset_time": "기상 조건에 따라",
+    "estimated_hours": "수십 분 단위 간헐적"
+  },
+  {
+    "id": 94,
+    "duration_category": "간헐적",
+    "duration_keywords": "한두 시간 간격으로 드문드문 반복",
+    "onset_time": "오늘 아침",
+    "estimated_hours": "1~2시간 주기의 간헐적"
+  },
+  {
+    "id": 95,
+    "duration_category": "간헐적",
+    "duration_keywords": "하루 종일 불규칙하게 발생과 중단을 반복",
+    "onset_time": "오늘 하루",
+    "estimated_hours": "불규칙한 간헐적"
+  },
+  {
+    "id": 96,
+    "duration_category": "간헐적",
+    "duration_keywords": "30분 간격으로 끊겼다 이어졌다 하는 중",
+    "onset_time": "오늘 오후",
+    "estimated_hours": "30분 주기의 간헐적"
+  },
+  {
+    "id": 97,
+    "duration_category": "간헐적",
+    "duration_keywords": "몇 분씩 짧게 끊어서 계속 반복",
+    "onset_time": "오늘 낮",
+    "estimated_hours": "수 분 단위 반복"
+  },
+  {
+    "id": 98,
+    "duration_category": "간헐적",
+    "duration_keywords": "한두 시간 지속되다가 두세 시간 멈추기를 반복",
+    "onset_time": "어제부터",
+    "estimated_hours": "수 시간 주기 반복"
+  },
+  {
+    "id": 99,
+    "duration_category": "간헐적",
+    "duration_keywords": "간헐적으로 짧게 반복",
+    "onset_time": "오늘 오후",
+    "estimated_hours": "간헐적 (단시간 반복)"
+  },
+  {
+    "id": 100,
+    "duration_category": "간헐적",
+    "duration_keywords": "하루 중 너덧 번씩 발생과 중단을 반복",
+    "onset_time": "오늘 하루",
+    "estimated_hours": "일 4~5회 반복"
+  },
+  {
+    "id": 101,
+    "duration_category": "간헐적",
+    "duration_keywords": "매 시간마다 한 10분씩 드문드문 지속",
+    "onset_time": "오늘 아침",
+    "estimated_hours": "시간당 10분씩 반복"
+  },
+  {
+    "id": 102,
+    "duration_category": "간헐적",
+    "duration_keywords": "수시로 발생했다가 사라지기를 반복",
+    "onset_time": "오늘 하루",
+    "estimated_hours": "수시로 반복"
+  },
+  {
+    "id": 103,
+    "duration_category": "간헐적",
+    "duration_keywords": "몇십 분 단위로 반복",
+    "onset_time": "오늘 오후",
+    "estimated_hours": "수십 분 단위 간헐적"
+  },
+  {
+    "id": 104,
+    "duration_category": "간헐적",
+    "duration_keywords": "일정하지 않고 드문드문 불규칙하게 반복",
+    "onset_time": "오늘 낮",
+    "estimated_hours": "불규칙 간헐적"
+  },
+  {
+    "id": 105,
+    "duration_category": "간헐적",
+    "duration_keywords": "하루에 수십 번씩 불규칙하게 반복",
+    "onset_time": "어제부터",
+    "estimated_hours": "고빈도 반복 간헐적"
+  },
+  {
+    "id": 106,
+    "duration_category": "간헐적",
+    "duration_keywords": "아침에 한 번 점심에 한 번 저녁에 한 번씩 불규칙하게",
+    "onset_time": "오늘",
+    "estimated_hours": "하루 3~4회 간헐적"
+  },
+  {
+    "id": 107,
+    "duration_category": "간헐적",
+    "duration_keywords": "매 시간 15분쯤 되면 반복",
+    "onset_time": "오늘 아침",
+    "estimated_hours": "시간당 고정 간헐적"
+  },
+  {
+    "id": 108,
+    "duration_category": "간헐적",
+    "duration_keywords": "몇 분간 지속되다가 몇십 분 멈추기를 반복",
+    "onset_time": "오늘 오후",
+    "estimated_hours": "분 단위 반복"
+  },
+  {
+    "id": 109,
+    "duration_category": "간헐적",
+    "duration_keywords": "하루에 서너 번씩 발생했다가 사라짐",
+    "onset_time": "오늘 낮",
+    "estimated_hours": "하루 수회"
+  },
+  {
+    "id": 110,
+    "duration_category": "간헐적",
+    "duration_keywords": "한 10분 지속되다가 멈춘 뒤 다시 반복",
+    "onset_time": "오늘 저녁",
+    "estimated_hours": "수 분 반복"
+  },
+  {
+    "id": 111,
+    "duration_category": "간헐적",
+    "duration_keywords": "며칠째 불규칙하게 발생과 중단을 반복",
+    "onset_time": "며칠 전",
+    "estimated_hours": "간헐적 (수 일)"
+  },
+  {
+    "id": 112,
+    "duration_category": "간헐적",
+    "duration_keywords": "한 번 발생하면 서너 시간씩 지속되는 상태가 며칠째 반복",
+    "onset_time": "며칠 전",
+    "estimated_hours": "3~4시간 (수일 반복)"
+  },
+  {
+    "id": 113,
+    "duration_category": "간헐적",
+    "duration_keywords": "아침부터 하루 종일 드문드문 반복되는 것이 일주일째",
+    "onset_time": "일주일 전",
+    "estimated_hours": "간헐적 (일주일 반복)"
+  },
+  {
+    "id": 114,
+    "duration_category": "간헐적",
+    "duration_keywords": "최근 3주째 불규칙한 주기로 반복",
+    "onset_time": "3주 전",
+    "estimated_hours": "3주간 간헐적"
+  },
+  {
+    "id": 115,
+    "duration_category": "간헐적",
+    "duration_keywords": "일주일째 하루 서너 번씩 반복",
+    "onset_time": "일주일 전",
+    "estimated_hours": "7일간 간헐적"
+  },
+  {
+    "id": 116,
+    "duration_category": "간헐적",
+    "duration_keywords": "지난 10일간 종일 불규칙하게 발생과 중단을 반복",
+    "onset_time": "10일 전",
+    "estimated_hours": "10일간 간헐적"
+  },
+  {
+    "id": 117,
+    "duration_category": "간헐적",
+    "duration_keywords": "벌써 보름째 주말마다 반복",
+    "onset_time": "15일 전",
+    "estimated_hours": "보름간 간헐적"
+  },
+  {
+    "id": 118,
+    "duration_category": "간헐적",
+    "duration_keywords": "지난 3주 동안 바람 방향이 바뀔 때마다 주기적으로 반복",
+    "onset_time": "3주 전",
+    "estimated_hours": "3주간 간헐적"
+  },
+  {
+    "id": 119,
+    "duration_category": "간헐적",
+    "duration_keywords": "며칠째 한두 시간 간격으로 드문드문 반복",
+    "onset_time": "며칠 전",
+    "estimated_hours": "수일간 간헐적"
+  },
+  {
+    "id": 120,
+    "duration_category": "간헐적",
+    "duration_keywords": "최근 2주간 하루 종일 불규칙하게 반복",
+    "onset_time": "2주 전",
+    "estimated_hours": "2주간 간헐적"
+  },
+  {
+    "id": 121,
+    "duration_category": "간헐적",
+    "duration_keywords": "일주일 내내 30분 간격으로 끊겼다 이어졌다 하고 있음",
+    "onset_time": "일주일 전",
+    "estimated_hours": "7일간 간헐적"
+  },
+  {
+    "id": 122,
+    "duration_category": "간헐적",
+    "duration_keywords": "보름째 매 시간마다 한 10분씩 반복",
+    "onset_time": "15일 전",
+    "estimated_hours": "15일간 간헐적"
+  },
+  {
+    "id": 123,
+    "duration_category": "간헐적",
+    "duration_keywords": "최근 10일 동안 오전에 세 번, 오후에 대여섯 번씩 반복",
+    "onset_time": "10일 전",
+    "estimated_hours": "10일간 고빈도 간헐적"
+  },
+  {
+    "id": 124,
+    "duration_category": "간헐적",
+    "duration_keywords": "벌써 며칠째 몇 분 동안 지속되다가 사라지기를 반복",
+    "onset_time": "며칠 전",
+    "estimated_hours": "수일간 간헐적"
+  },
+  {
+    "id": 125,
+    "duration_category": "간헐적",
+    "duration_keywords": "지난 3주간 불규칙하게 반복",
+    "onset_time": "3주 전",
+    "estimated_hours": "3주간 간헐적"
+  },
+  {
+    "id": 126,
+    "duration_category": "간헐적",
+    "duration_keywords": "일주일째 불규칙한 주기로 발생과 중단을 반복",
+    "onset_time": "일주일 전",
+    "estimated_hours": "7일간 간헐적"
+  },
+  {
+    "id": 127,
+    "duration_category": "간헐적",
+    "duration_keywords": "며칠째 몇십 분 단위로 반복",
+    "onset_time": "며칠 전",
+    "estimated_hours": "수일간 간헐적"
+  },
+  {
+    "id": 128,
+    "duration_category": "간헐적",
+    "duration_keywords": "최근 2주째 아침부터 저녁까지 간간이 반복",
+    "onset_time": "2주 전",
+    "estimated_hours": "2주간 간헐적"
+  },
+  {
+    "id": 129,
+    "duration_category": "간헐적",
+    "duration_keywords": "지난 열흘 동안 하루 종일 불규칙하게 반복",
+    "onset_time": "10일 전",
+    "estimated_hours": "10일간 간헐적"
+  },
+  {
+    "id": 130,
+    "duration_category": "간헐적",
+    "duration_keywords": "벌써 일주일 가까이 간헐적으로 반복",
+    "onset_time": "일주일 전",
+    "estimated_hours": "7일간 간헐적"
+  },
+  {
+    "id": 131,
+    "duration_category": "간헐적",
+    "duration_keywords": "최근 5일 동안 몇 시간 단위로 반복",
+    "onset_time": "5일 전",
+    "estimated_hours": "5일간 간헐적"
+  },
+  {
+    "id": 132,
+    "duration_category": "간헐적",
+    "duration_keywords": "지난 12일간 불규칙하게 발생했다가 사라지기를 반복",
+    "onset_time": "12일 전",
+    "estimated_hours": "12일간 간헐적"
+  },
+  {
+    "id": 133,
+    "duration_category": "간헐적",
+    "duration_keywords": "벌써 나흘째 30분 지속되다가 몇 시간 멈추기를 반복",
+    "onset_time": "4일 전",
+    "estimated_hours": "4일간 간헐적"
+  },
+  {
+    "id": 134,
+    "duration_category": "간헐적",
+    "duration_keywords": "최근 2주간 특정 시간마다 주기적으로 반복",
+    "onset_time": "2주 전",
+    "estimated_hours": "14일간 간헐적"
+  },
+  {
+    "id": 135,
+    "duration_category": "간헐적",
+    "duration_keywords": "며칠째 한 20분씩 지속되다가 멈추기를 반복",
+    "onset_time": "며칠 전",
+    "estimated_hours": "수일간 간헐적"
+  },
+  {
+    "id": 136,
+    "duration_category": "간헐적",
+    "duration_keywords": "지난 8일 동안 하루에 서너 번씩 드문드문 반복",
+    "onset_time": "8일 전",
+    "estimated_hours": "8일간 간헐적"
+  },
+  {
+    "id": 137,
+    "duration_category": "간헐적",
+    "duration_keywords": "벌써 9일 동안 불규칙한 간격으로 발생과 중단을 반복",
+    "onset_time": "9일 전",
+    "estimated_hours": "9일간 간헐적"
+  },
+  {
+    "id": 138,
+    "duration_category": "간헐적",
+    "duration_keywords": "최근 11일째 수시로 반복",
+    "onset_time": "11일 전",
+    "estimated_hours": "11일간 간헐적"
+  },
+  {
+    "id": 139,
+    "duration_category": "간헐적",
+    "duration_keywords": "일주일 내내 한두 시간 지속되다가 두세 시간 멈추기를 반복",
+    "onset_time": "일주일 전",
+    "estimated_hours": "7일간 간헐적"
+  },
+  {
+    "id": 140,
+    "duration_category": "간헐적",
+    "duration_keywords": "지난 보름 동안 매일 드문드문 불규칙하게 반복",
+    "onset_time": "15일 전",
+    "estimated_hours": "15일간 간헐적"
+  },
+  {
+    "id": 141,
+    "duration_category": "간헐적",
+    "duration_keywords": "수개월째 주 2~3회씩 발생과 중단을 반복",
+    "onset_time": "수개월 전",
+    "estimated_hours": "수개월간 간헐적"
+  },
+  {
+    "id": 142,
+    "duration_category": "간헐적",
+    "duration_keywords": "지난 한 달 동안 이틀에 한 번꼴로 반복",
+    "onset_time": "한 달 전",
+    "estimated_hours": "1개월간 간헐적"
+  },
+  {
+    "id": 143,
+    "duration_category": "간헐적",
+    "duration_keywords": "수년째 매 여름마다 주기적으로 반복",
+    "onset_time": "수년 전",
+    "estimated_hours": "매년 여름 반복"
+  },
+  {
+    "id": 144,
+    "duration_category": "간헐적",
+    "duration_keywords": "최근 두 달 동안 밤마다 간헐적으로 반복",
+    "onset_time": "두 달 전",
+    "estimated_hours": "2개월간 간헐적"
+  },
+  {
+    "id": 145,
+    "duration_category": "간헐적",
+    "duration_keywords": "수개월째 일주일에 서너 번씩 반복",
+    "onset_time": "수개월 전",
+    "estimated_hours": "수개월간 간헐적"
+  },
+  {
+    "id": 146,
+    "duration_category": "간헐적",
+    "duration_keywords": "올해 초부터 잊을 만하면 한 번씩 드문드문 반복",
+    "onset_time": "올해 초",
+    "estimated_hours": "수개월간 간헐적"
+  },
+  {
+    "id": 147,
+    "duration_category": "간헐적",
+    "duration_keywords": "한 달째 하루에 수십 번씩 반복 중",
+    "onset_time": "한 달 전",
+    "estimated_hours": "1개월간 고빈도 간헐적"
+  },
+  {
+    "id": 148,
+    "duration_category": "간헐적",
+    "duration_keywords": "수개월째 밤마다 짧게 반복",
+    "onset_time": "수개월 전",
+    "estimated_hours": "수개월간 간헐적"
+  },
+  {
+    "id": 149,
+    "duration_category": "간헐적",
+    "duration_keywords": "지난 한 달간 하루 중 너덧 번씩 반복",
+    "onset_time": "한 달 전",
+    "estimated_hours": "1개월간 간헐적"
+  },
+  {
+    "id": 150,
+    "duration_category": "간헐적",
+    "duration_keywords": "올해 들어 수시로 반복",
+    "onset_time": "올해 초",
+    "estimated_hours": "수개월간 간헐적"
+  },
+  {
+    "id": 151,
+    "duration_category": "간헐적",
+    "duration_keywords": "지난 한 달간 일정하지 않고 드문드문 불규칙하게 반복",
+    "onset_time": "한 달 전",
+    "estimated_hours": "1개월간 간헐적"
+  },
+  {
+    "id": 152,
+    "duration_category": "간헐적",
+    "duration_keywords": "수년째 봄가을마다 주기적으로 반복",
+    "onset_time": "수년 전",
+    "estimated_hours": "주기적 반복"
+  },
+  {
+    "id": 153,
+    "duration_category": "간헐적",
+    "duration_keywords": "재작년부터 매 장마철마다 주기적으로 반복",
+    "onset_time": "재작년 장마철",
+    "estimated_hours": "수년간 반복"
+  },
+  {
+    "id": 154,
+    "duration_category": "간헐적",
+    "duration_keywords": "최근 3달 동안 일주일에 한두 번꼴로 간간이 반복",
+    "onset_time": "3개월 전",
+    "estimated_hours": "3개월간 간헐적"
+  },
+  {
+    "id": 155,
+    "duration_category": "간헐적",
+    "duration_keywords": "지난 6개월간 특정 시기마다 불규칙하게 반복",
+    "onset_time": "6개월 전",
+    "estimated_hours": "6개월간 간헐적"
+  },
+  {
+    "id": 156,
+    "duration_category": "간헐적",
+    "duration_keywords": "몇 년 동안 특정 요일 새벽마다 간헐적으로 반복됨",
+    "onset_time": "수년 전",
+    "estimated_hours": "수년간 반복"
+  },
+  {
+    "id": 157,
+    "duration_category": "간헐적",
+    "duration_keywords": "최근 5개월째 며칠 간격으로 반복",
+    "onset_time": "5개월 전",
+    "estimated_hours": "5개월간 간헐적"
+  },
+  {
+    "id": 158,
+    "duration_category": "간헐적",
+    "duration_keywords": "작년부터 날씨가 궂은 날마다 주기적으로 반복",
+    "onset_time": "작년",
+    "estimated_hours": "1년 이상 주기적 반복"
+  },
+  {
+    "id": 159,
+    "duration_category": "간헐적",
+    "duration_keywords": "올해 들어 보름에 한 번씩 주기적으로 반복",
+    "onset_time": "올해 초",
+    "estimated_hours": "수개월간 간헐적"
+  },
+  {
+    "id": 160,
+    "duration_category": "간헐적",
+    "duration_keywords": "수년째 바람 방향에 따라 간헐적으로 반복",
+    "onset_time": "수년 전",
+    "estimated_hours": "수년간 간헐적"
+  },
+  {
+    "id": 161,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "밤 10시 넘어서 두세 시간 동안",
+    "onset_time": "밤 22:00 이후",
+    "estimated_hours": "2~3시간"
+  },
+  {
+    "id": 162,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "밤마다 한두 시간 동안",
+    "onset_time": "밤(취침 시)",
+    "estimated_hours": "1~2시간"
+  },
+  {
+    "id": 163,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "해질 무렵부터 밤새 내내",
+    "onset_time": "해질 무렵",
+    "estimated_hours": "수 시간 (밤 시간)"
+  },
+  {
+    "id": 164,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "해가 지고 나면 서너 시간 동안",
+    "onset_time": "일몰 직후",
+    "estimated_hours": "3~4시간"
+  },
+  {
+    "id": 165,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "밤 9시만 되면 두 시간 동안",
+    "onset_time": "밤 21:00",
+    "estimated_hours": "2시간"
+  },
+  {
+    "id": 166,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "아침 8시경 / 저녁 7시경 각각 한 번씩",
+    "onset_time": "08:00, 19:00",
+    "estimated_hours": "일 2회 (각 수십 분)"
+  },
+  {
+    "id": 167,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "오후 5시~8시 사이 한두 시간",
+    "onset_time": "17:00 ~ 20:00 사이",
+    "estimated_hours": "1~2시간"
+  },
+  {
+    "id": 168,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "매일 밤 몇 시간 동안",
+    "onset_time": "밤 시간",
+    "estimated_hours": "수 시간"
+  },
+  {
+    "id": 169,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "매일 저녁 8시경 어김없이 발생",
+    "onset_time": "매일 20:00",
+    "estimated_hours": "수 시간 (저녁 내내)"
+  },
+  {
+    "id": 170,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "밤 11시경부터 한두 시간 정도",
+    "onset_time": "밤 23:00",
+    "estimated_hours": "1~2시간"
+  },
+  {
+    "id": 171,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "매일 새벽 1시부터 3시 사이",
+    "onset_time": "새벽 01:00 ~ 03:00",
+    "estimated_hours": "2시간"
+  },
+  {
+    "id": 172,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "아침 8시경에",
+    "onset_time": "아침 08:00경",
+    "estimated_hours": "1~2시간"
+  },
+  {
+    "id": 173,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "오후 2시부터 4시 사이",
+    "onset_time": "오후 14:00",
+    "estimated_hours": "2시간"
+  },
+  {
+    "id": 174,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "저녁 7시쯤 몇 시간 동안",
+    "onset_time": "저녁 19:00",
+    "estimated_hours": "2~3시간"
+  },
+  {
+    "id": 175,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "밤 12시 지나서 새벽 2시 사이에 꼭",
+    "onset_time": "새벽 00:00 ~ 02:00",
+    "estimated_hours": "2시간"
+  },
+  {
+    "id": 176,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "아침 9시쯤 시작해서 낮 12시 전까지",
+    "onset_time": "오전 09:00",
+    "estimated_hours": "3시간"
+  },
+  {
+    "id": 177,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "오후 6시부터 두 시간 동안",
+    "onset_time": "오후 18:00",
+    "estimated_hours": "2시간"
+  },
+  {
+    "id": 178,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "낮 12시경에 한 시간씩",
+    "onset_time": "낮 12:00",
+    "estimated_hours": "1시간"
+  },
+  {
+    "id": 179,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "매일 새벽 4시부터 6시 사이",
+    "onset_time": "새벽 04:00 ~ 06:00",
+    "estimated_hours": "2시간"
+  },
+  {
+    "id": 180,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "저녁 6시부터 밤 9시까지",
+    "onset_time": "저녁 18:00",
+    "estimated_hours": "3시간"
+  },
+  {
+    "id": 181,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "새벽 3시부터 5시 사이",
+    "onset_time": "새벽 03:00 ~ 05:00",
+    "estimated_hours": "2시간"
+  },
+  {
+    "id": 182,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "낮 1시부터 3시 사이",
+    "onset_time": "오후 13:00 ~ 15:00",
+    "estimated_hours": "2시간"
+  },
+  {
+    "id": 183,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "오전 8시 반에 한 시간 동안",
+    "onset_time": "오전 08:30",
+    "estimated_hours": "1시간"
+  },
+  {
+    "id": 184,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "저녁 9시 반부터 밤 12시 자정까지 어김없이",
+    "onset_time": "밤 21:30 ~ 24:00",
+    "estimated_hours": "2.5시간"
+  },
+  {
+    "id": 185,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "매일 오후 4시부터 6시 사이",
+    "onset_time": "오후 16:00 ~ 18:00",
+    "estimated_hours": "2시간"
+  },
+  {
+    "id": 186,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "새벽 2시부터 4시 사이",
+    "onset_time": "새벽 02:00 ~ 04:00",
+    "estimated_hours": "2시간"
+  },
+  {
+    "id": 187,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "매일 저녁 6시 반부터 8시 반까지",
+    "onset_time": "저녁 18:30 ~ 20:30",
+    "estimated_hours": "2시간"
+  },
+  {
+    "id": 188,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "아침 7시 반부터 9시 사이",
+    "onset_time": "아침 07:30 ~ 09:00",
+    "estimated_hours": "1.5시간"
+  },
+  {
+    "id": 189,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "오후 3시 반부터 5시 사이",
+    "onset_time": "오후 15:30 ~ 17:00",
+    "estimated_hours": "1.5시간"
+  },
+  {
+    "id": 190,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "밤 11시 반부터 새벽 1시 반 사이",
+    "onset_time": "밤 23:30 ~ 01:30",
+    "estimated_hours": "2시간"
+  },
+  {
+    "id": 191,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "일주일째 매일 저녁 8시경",
+    "onset_time": "일주일 전부터 매일 20:00",
+    "estimated_hours": "7일간 반복 (일 2시간)"
+  },
+  {
+    "id": 192,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "지난 2주 동안 매일 새벽 2시부터 두 시간 동안",
+    "onset_time": "2주 전부터 매일 02:00",
+    "estimated_hours": "14일간 반복 (일 2시간)"
+  },
+  {
+    "id": 193,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "최근 10일 동안 매일 밤 한두 시간 동안",
+    "onset_time": "10일 전부터 매일 밤",
+    "estimated_hours": "10일간 반복 (일 1~2시간)"
+  },
+  {
+    "id": 194,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "일주일째 밤 11시경부터 한두 시간 정도",
+    "onset_time": "일주일 전부터 매일 23:00",
+    "estimated_hours": "7일간 반복 (일 1~2시간)"
+  },
+  {
+    "id": 195,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "지난 2주간 매일 새벽 1시부터 3시 사이",
+    "onset_time": "2주 전부터 매일 01:00",
+    "estimated_hours": "14일간 반복 (일 2시간)"
+  },
+  {
+    "id": 196,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "일주일 내내 저녁 7시쯤 몇 시간 동안",
+    "onset_time": "일주일 전부터 매일 19:00",
+    "estimated_hours": "7일간 반복 (일 2~3시간)"
+  },
+  {
+    "id": 197,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "지난 10일 동안 매일 밤 12시부터 새벽 2시 사이",
+    "onset_time": "10일 전부터 매일 00:00",
+    "estimated_hours": "10일간 반복 (일 2시간)"
+  },
+  {
+    "id": 198,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "보름째 매일 아침 9시쯤부터 낮 12시 전까지",
+    "onset_time": "15일 전부터 매일 09:00",
+    "estimated_hours": "15일간 반복 (일 3시간)"
+  },
+  {
+    "id": 199,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "최근 3주 동안 매일 낮 12시경에 한 시간씩",
+    "onset_time": "3주 전부터 매일 12:00",
+    "estimated_hours": "21일간 반복 (일 1시간)"
+  },
+  {
+    "id": 200,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "일주일 동안 매일 저녁 6시부터 밤 9시까지",
+    "onset_time": "일주일 전부터 매일 18:00",
+    "estimated_hours": "7일간 반복 (일 3시간)"
+  },
+  {
+    "id": 201,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "지난 2주째 매주 특정 요일 밤 시간대에",
+    "onset_time": "2주 전부터 특정 요일",
+    "estimated_hours": "2주간 특정 밤 시간 반복"
+  },
+  {
+    "id": 202,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "최근 10일간 매일 오전 10시부터 12시 사이",
+    "onset_time": "10일 전부터 매일 10:00",
+    "estimated_hours": "10일간 반복 (일 2시간)"
+  },
+  {
+    "id": 203,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "일주일 내내 밤 10시부터 새벽 2시 사이",
+    "onset_time": "일주일 전부터 매일 22:00",
+    "estimated_hours": "7일간 반복 (일 4시간)"
+  },
+  {
+    "id": 204,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "보름 전부터 매일 새벽 3시부터 5시 사이",
+    "onset_time": "15일 전부터 매일 03:00",
+    "estimated_hours": "15일간 반복 (일 2시간)"
+  },
+  {
+    "id": 205,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "최근 3주째 매일 낮 1시부터 3시 사이",
+    "onset_time": "3주 전부터 매일 13:00",
+    "estimated_hours": "21일간 반복 (일 2시간)"
+  },
+  {
+    "id": 206,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "일주일째 오전 8시 반에 한 시간 동안",
+    "onset_time": "일주일 전부터 매일 08:30",
+    "estimated_hours": "7일간 반복 (일 1시간)"
+  },
+  {
+    "id": 207,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "지난 2주간 저녁 9시 반부터 밤 12시까지",
+    "onset_time": "2주 전부터 매일 21:30",
+    "estimated_hours": "14일간 반복 (일 2.5시간)"
+  },
+  {
+    "id": 208,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "일주일째 매일 저녁 6시 반부터 8시 반까지",
+    "onset_time": "일주일 전부터 매일 18:30",
+    "estimated_hours": "7일간 반복 (일 2시간)"
+  },
+  {
+    "id": 209,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "지난 2주간 아침 7시 반부터 9시 사이",
+    "onset_time": "2주 전부터 매일 07:30",
+    "estimated_hours": "14일간 반복 (일 1.5시간)"
+  },
+  {
+    "id": 210,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "벌써 5일째 매일 새벽 4시부터 한 시간씩",
+    "onset_time": "5일 전부터 매일 04:00",
+    "estimated_hours": "5일간 반복 (일 1시간)"
+  },
+  {
+    "id": 211,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "지난 열흘 동안 매일 오전 9시 반에",
+    "onset_time": "10일 전부터 매일 09:30",
+    "estimated_hours": "10일간 반복 (일 수십 분)"
+  },
+  {
+    "id": 212,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "벌써 나흘째 밤 10시 반부터 자정까지",
+    "onset_time": "4일 전부터 매일 22:30",
+    "estimated_hours": "4일간 반복 (일 1.5시간)"
+  },
+  {
+    "id": 213,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "지난 6일간 매일 오후 2시부터 4시 사이",
+    "onset_time": "6일 전부터 매일 14:00",
+    "estimated_hours": "6일간 반복 (일 2시간)"
+  },
+  {
+    "id": 214,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "보름째 매일 밤 11시경",
+    "onset_time": "15일 전부터 매일 23:00",
+    "estimated_hours": "15일간 반복 (일 수십 분)"
+  },
+  {
+    "id": 215,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "최근 일주일 동안 매일 아침 7시 반마다",
+    "onset_time": "일주일 전부터 매일 07:30",
+    "estimated_hours": "7일간 반복 (일 수십 분)"
+  },
+  {
+    "id": 216,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "벌써 12일 동안 매일 저녁 8시부터",
+    "onset_time": "12일 전부터 매일 20:00",
+    "estimated_hours": "12일간 반복 (일 수 시간)"
+  },
+  {
+    "id": 217,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "지난 9일째 매일 오후 5시에",
+    "onset_time": "9일 전부터 매일 17:00",
+    "estimated_hours": "9일간 반복 (일 수 시간)"
+  },
+  {
+    "id": 218,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "최근 보름 동안 매일 새벽 1시 반부터 한 시간 동안",
+    "onset_time": "15일 전부터 매일 01:30",
+    "estimated_hours": "15일간 반복 (일 1시간)"
+  },
+  {
+    "id": 219,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "벌써 일주일째 매일 낮 12시 반에",
+    "onset_time": "일주일 전부터 매일 12:30",
+    "estimated_hours": "7일간 반복 (일 수십 분)"
+  },
+  {
+    "id": 220,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "지난 8일 동안 매일 밤 9시 반에",
+    "onset_time": "8일 전부터 매일 21:30",
+    "estimated_hours": "8일간 반복 (일 수 시간)"
+  },
+  {
+    "id": 221,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "한 달 내내 매일 해질 무렵부터 밤새도록",
+    "onset_time": "한 달 전부터 매일 저녁",
+    "estimated_hours": "30일간 반복 (밤 시간대)"
+  },
+  {
+    "id": 222,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "수개월째 매일 오후 6시부터 두 시간 동안",
+    "onset_time": "수개월 전부터 매일 18:00",
+    "estimated_hours": "수개월간 반복 (일 2시간)"
+  },
+  {
+    "id": 223,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "한 달째 매일 아침 8시경에",
+    "onset_time": "한 달 전부터 매일 08:00",
+    "estimated_hours": "30일간 반복 (일 1~2시간)"
+  },
+  {
+    "id": 224,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "수개월 동안 매일 오후 2시부터 4시 사이",
+    "onset_time": "수개월 전부터 매일 14:00",
+    "estimated_hours": "수개월간 반복 (일 2시간)"
+  },
+  {
+    "id": 225,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "수개월째 매일 새벽 4시부터 6시 사이",
+    "onset_time": "수개월 전부터 매일 04:00",
+    "estimated_hours": "수개월간 반복 (일 2시간)"
+  },
+  {
+    "id": 226,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "한 달 내내 밤 11시부터 새벽 1시 사이",
+    "onset_time": "한 달 전부터 매일 23:00",
+    "estimated_hours": "30일간 반복 (일 2시간)"
+  },
+  {
+    "id": 227,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "수개월째 매일 저녁 7시부터 밤 10시 사이",
+    "onset_time": "수개월 전부터 매일 19:00",
+    "estimated_hours": "수개월간 반복 (일 3시간)"
+  },
+  {
+    "id": 228,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "한 달째 매일 오후 4시부터 6시 사이",
+    "onset_time": "한 달 전부터 매일 16:00",
+    "estimated_hours": "30일간 반복 (일 2시간)"
+  },
+  {
+    "id": 229,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "수개월 동안 매일 새벽 2시부터 4시 사이",
+    "onset_time": "수개월 전부터 매일 02:00",
+    "estimated_hours": "수개월간 반복 (일 2시간)"
+  },
+  {
+    "id": 230,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "한 달 내내 오후 3시 반부터 5시 사이",
+    "onset_time": "한 달 전부터 매일 15:30",
+    "estimated_hours": "30일간 반복 (일 1.5시간)"
+  },
+  {
+    "id": 231,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "수개월째 밤 11시 반부터 새벽 1시 반 사이",
+    "onset_time": "수개월 전부터 매일 23:30",
+    "estimated_hours": "수개월간 반복 (일 2시간)"
+  },
+  {
+    "id": 232,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "수년째 여름철 밤 10시부터 두세 시간 동안",
+    "onset_time": "수년 전 매일 밤 22:00",
+    "estimated_hours": "매년 여름 반복 (일 2~3시간)"
+  },
+  {
+    "id": 233,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "작년부터 봄가을 아침 8시경에 한 시간 동안",
+    "onset_time": "작년부터 매일 08:00",
+    "estimated_hours": "1년 넘게 반복 (일 1시간)"
+  },
+  {
+    "id": 234,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "최근 3달 동안 매일 저녁 7시 반에",
+    "onset_time": "3개월 전 매일 19:30",
+    "estimated_hours": "3개월간 반복 (일 수 시간)"
+  },
+  {
+    "id": 235,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "지난 6개월 내내 매일 밤 12시 이후",
+    "onset_time": "6개월 전 매일 00:00",
+    "estimated_hours": "6개월간 반복 (일 2시간)"
+  },
+  {
+    "id": 236,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "몇 년 동안 매일 새벽 3시경에",
+    "onset_time": "수년 전 매일 03:00",
+    "estimated_hours": "수년간 반복 (일 1~2시간)"
+  },
+  {
+    "id": 237,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "최근 4달째 매일 오후 1시 반에",
+    "onset_time": "4개월 전 매일 13:30",
+    "estimated_hours": "4개월간 반복 (일 1시간)"
+  },
+  {
+    "id": 238,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "올해 내내 매일 아침 7시경에",
+    "onset_time": "올해 초 매일 07:00",
+    "estimated_hours": "수개월간 반복 (일 수십 분)"
+  },
+  {
+    "id": 239,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "지난 반년 동안 매일 저녁 8시 반에",
+    "onset_time": "6개월 전 매일 20:30",
+    "estimated_hours": "6개월간 반복 (일 수 시간)"
+  },
+  {
+    "id": 240,
+    "duration_category": "특정 시간대",
+    "duration_keywords": "수년째 가을철 새벽 2시부터 4시 사이",
+    "onset_time": "수년 전 새벽 02:00",
+    "estimated_hours": "매년 가을 반복 (일 2시간)"
+  },
+  {
+    "id": 241,
+    "duration_category": "단시간",
+    "duration_keywords": "방금 전 10분 전부터",
+    "onset_time": "방금 전",
+    "estimated_hours": "10분 이상 지속 중"
+  },
+  {
+    "id": 242,
+    "duration_category": "단시간",
+    "duration_keywords": "아까 한 번 잠깐 발생했다가 금방 사라짐",
+    "onset_time": "오늘 낮",
+    "estimated_hours": "수 분 이내"
+  },
+  {
+    "id": 243,
+    "duration_category": "단시간",
+    "duration_keywords": "5분 전부터",
+    "onset_time": "방금 전",
+    "estimated_hours": "5분 이상 지속 중"
+  },
+  {
+    "id": 244,
+    "duration_category": "단시간",
+    "duration_keywords": "한 10분 정도 짧게 지속",
+    "onset_time": "오늘 오후",
+    "estimated_hours": "10분"
+  },
+  {
+    "id": 245,
+    "duration_category": "단시간",
+    "duration_keywords": "방금 전 일시적으로 발생",
+    "onset_time": "방금 전",
+    "estimated_hours": "수 분 이내 (일시적)"
+  },
+  {
+    "id": 246,
+    "duration_category": "단시간",
+    "duration_keywords": "15분 전쯤 발생했다가 이내 사라짐",
+    "onset_time": "약 15분 전",
+    "estimated_hours": "수 분"
+  },
+  {
+    "id": 247,
+    "duration_category": "단시간",
+    "duration_keywords": "잠깐 동안 지속되다가 멈춤",
+    "onset_time": "오늘 낮",
+    "estimated_hours": "수 분~수십 분"
+  },
+  {
+    "id": 248,
+    "duration_category": "단시간",
+    "duration_keywords": "단 10분 동안 발생했다가 사라짐",
+    "onset_time": "오늘 오후",
+    "estimated_hours": "10분"
+  },
+  {
+    "id": 249,
+    "duration_category": "단시간",
+    "duration_keywords": "방금 전 잠깐 발생",
+    "onset_time": "방금 전",
+    "estimated_hours": "일시적"
+  },
+  {
+    "id": 250,
+    "duration_category": "단시간",
+    "duration_keywords": "아주 짧게 한 5분 동안",
+    "onset_time": "오늘 오전",
+    "estimated_hours": "5분"
+  },
+  {
+    "id": 251,
+    "duration_category": "단시간",
+    "duration_keywords": "약 5분 전부터",
+    "onset_time": "방금 전",
+    "estimated_hours": "5분 이상 지속 중"
+  },
+  {
+    "id": 252,
+    "duration_category": "단시간",
+    "duration_keywords": "한 10분 정도 지속되다가 바로 사라짐",
+    "onset_time": "오늘 저녁",
+    "estimated_hours": "10분"
+  },
+  {
+    "id": 253,
+    "duration_category": "단시간",
+    "duration_keywords": "아까 한 15분 동안 지속되다가 금방 사라짐",
+    "onset_time": "오늘 오후",
+    "estimated_hours": "15분"
+  },
+  {
+    "id": 254,
+    "duration_category": "단시간",
+    "duration_keywords": "방금 전 순간적으로 발생",
+    "onset_time": "방금 전",
+    "estimated_hours": "수 분 이내"
+  },
+  {
+    "id": 255,
+    "duration_category": "단시간",
+    "duration_keywords": "2~3분 동안 짧게",
+    "onset_time": "오늘 낮",
+    "estimated_hours": "2~3분"
+  },
+  {
+    "id": 256,
+    "duration_category": "단시간",
+    "duration_keywords": "한 5분 전쯤부터",
+    "onset_time": "방금 전",
+    "estimated_hours": "5분 이상 지속 중"
+  },
+  {
+    "id": 257,
+    "duration_category": "단시간",
+    "duration_keywords": "아주 잠깐 한 10분 정도만 지속되다가 사라짐",
+    "onset_time": "오늘 오전",
+    "estimated_hours": "10분"
+  },
+  {
+    "id": 258,
+    "duration_category": "단시간",
+    "duration_keywords": "단 몇 분 만에 발생했다가 사라짐",
+    "onset_time": "오늘 저녁",
+    "estimated_hours": "수 분 이내"
+  },
+  {
+    "id": 259,
+    "duration_category": "단시간",
+    "duration_keywords": "아까 점심 지나 한 10분 동안 지속되다가 그침",
+    "onset_time": "오늘 오후",
+    "estimated_hours": "10분"
+  },
+  {
+    "id": 260,
+    "duration_category": "단시간",
+    "duration_keywords": "약 15분 전 한 차례 발생했다가 사라짐",
+    "onset_time": "약 15분 전",
+    "estimated_hours": "수 분 이내"
+  },
+  {
+    "id": 261,
+    "duration_category": "단시간",
+    "duration_keywords": "단 5분 동안 지속되다가 멈춤",
+    "onset_time": "오늘 아침",
+    "estimated_hours": "5분"
+  },
+  {
+    "id": 262,
+    "duration_category": "단시간",
+    "duration_keywords": "아까 오전 10시경 한 10분 동안 지속되다가 사라짐",
+    "onset_time": "오늘 10:00",
+    "estimated_hours": "10분"
+  },
+  {
+    "id": 263,
+    "duration_category": "단시간",
+    "duration_keywords": "한 7분 전쯤부터",
+    "onset_time": "방금 전",
+    "estimated_hours": "수 분 지속 중"
+  },
+  {
+    "id": 264,
+    "duration_category": "단시간",
+    "duration_keywords": "단 10분 동안 지속되다가 이내 사라짐",
+    "onset_time": "오늘 오후",
+    "estimated_hours": "10분"
+  },
+  {
+    "id": 265,
+    "duration_category": "단시간",
+    "duration_keywords": "아까 낮에 한 5분 동안 지속되다가 사라짐",
+    "onset_time": "오늘 낮",
+    "estimated_hours": "5분"
+  },
+  {
+    "id": 266,
+    "duration_category": "단시간",
+    "duration_keywords": "약 8분 전쯤부터 잠깐 지속되다가 사라짐",
+    "onset_time": "약 8분 전",
+    "estimated_hours": "수 분"
+  },
+  {
+    "id": 267,
+    "duration_category": "단시간",
+    "duration_keywords": "아주 짧게 한 10분 동안 지속되다가 끝남",
+    "onset_time": "오늘 오후",
+    "estimated_hours": "10분"
+  },
+  {
+    "id": 268,
+    "duration_category": "추출 불가/미언급",
+    "duration_keywords": "잘 모름",
+    "onset_time": "미상",
+    "estimated_hours": "알 수 없음"
+  },
+  {
+    "id": 269,
+    "duration_category": "추출 불가/미언급",
+    "duration_keywords": "지속시간 모름",
+    "onset_time": "미상",
+    "estimated_hours": "알 수 없음"
+  },
+  {
+    "id": 270,
+    "duration_category": "추출 불가/미언급",
+    "duration_keywords": "언제부터 시작됐는지 모름",
+    "onset_time": "미상",
+    "estimated_hours": "알 수 없음"
+  },
+  {
+    "id": 271,
+    "duration_category": "추출 불가/미언급",
+    "duration_keywords": "지속시간 잘 모르지만 그냥 계속 있었던 것 같음",
+    "onset_time": "미상",
+    "estimated_hours": "알 수 없음"
+  },
+  {
+    "id": 272,
+    "duration_category": "추출 불가/미언급",
+    "duration_keywords": "언제부터 시작됐는지 모르겠음",
+    "onset_time": "미상",
+    "estimated_hours": "알 수 없음"
+  },
+  {
+    "id": 273,
+    "duration_category": "추출 불가/미언급",
+    "duration_keywords": "시간 알 수 없음",
+    "onset_time": "미상",
+    "estimated_hours": "알 수 없음"
+  },
+  {
+    "id": 274,
+    "duration_category": "추출 불가/미언급",
+    "duration_keywords": "몇 분 동안 지속됐는지 기억 안 남",
+    "onset_time": "미상",
+    "estimated_hours": "알 수 없음"
+  },
+  {
+    "id": 275,
+    "duration_category": "추출 불가/미언급",
+    "duration_keywords": "몇 분 동안 지속됐는지 전혀 모르겠음",
+    "onset_time": "미상",
+    "estimated_hours": "알 수 없음"
+  },
+  {
+    "id": 276,
+    "duration_category": "추출 불가/미언급",
+    "duration_keywords": "시간 불확실",
+    "onset_time": "새벽 시간",
+    "estimated_hours": "알 수 없음"
+  },
+  {
+    "id": 277,
+    "duration_category": "추출 불가/미언급",
+    "duration_keywords": "지속시간을 잘 모르겠음",
+    "onset_time": "미상",
+    "estimated_hours": "알 수 없음"
+  },
+  {
+    "id": 278,
+    "duration_category": "추출 불가/미언급",
+    "duration_keywords": "언제 시작됐는지 확인 불가",
+    "onset_time": "미상",
+    "estimated_hours": "알 수 없음"
+  },
+  {
+    "id": 279,
+    "duration_category": "추출 불가/미언급",
+    "duration_keywords": "지속시간은 체크하지 않아서 모름",
+    "onset_time": "미상",
+    "estimated_hours": "알 수 없음"
+  },
+  {
+    "id": 280,
+    "duration_category": "추출 불가/미언급",
+    "duration_keywords": "언제부터 시작됐는지 기억나지 않음",
+    "onset_time": "미상",
+    "estimated_hours": "알 수 없음"
+  },
+  {
+    "id": 281,
+    "duration_category": "추출 불가/미언급",
+    "duration_keywords": "정확한 시간은 기억 안 남",
+    "onset_time": "미상",
+    "estimated_hours": "알 수 없음"
+  },
+  {
+    "id": 282,
+    "duration_category": "추출 불가/미언급",
+    "duration_keywords": "정확한 지속시간은 모르겠음",
+    "onset_time": "미상",
+    "estimated_hours": "알 수 없음"
+  },
+  {
+    "id": 283,
+    "duration_category": "추출 불가/미언급",
+    "duration_keywords": "언제부터 시작됐는지 추측 불가",
+    "onset_time": "미상",
+    "estimated_hours": "알 수 없음"
+  },
+  {
+    "id": 284,
+    "duration_category": "추출 불가/미언급",
+    "duration_keywords": "정확히 몇 시부터인지 기억 안 남",
+    "onset_time": "미상",
+    "estimated_hours": "알 수 없음"
+  },
+  {
+    "id": 285,
+    "duration_category": "추출 불가/미언급",
+    "duration_keywords": "지속시간은 알 수 없음",
+    "onset_time": "미상",
+    "estimated_hours": "알 수 없음"
+  },
+  {
+    "id": 286,
+    "duration_category": "추출 불가/미언급",
+    "duration_keywords": "언제 시작됐는지 전혀 파악 안 됨",
+    "onset_time": "미상",
+    "estimated_hours": "알 수 없음"
+  },
+  {
+    "id": 287,
+    "duration_category": "추출 불가/미언급",
+    "duration_keywords": "정확한 시간대는 모름",
+    "onset_time": "미상",
+    "estimated_hours": "알 수 없음"
+  },
+  {
+    "id": 288,
+    "duration_category": "추출 불가/미언급",
+    "duration_keywords": "지속시간 확인 안 됨",
+    "onset_time": "미상",
+    "estimated_hours": "알 수 없음"
+  },
+  {
+    "id": 289,
+    "duration_category": "추출 불가/미언급",
+    "duration_keywords": "정확한 기록은 없음",
+    "onset_time": "미상",
+    "estimated_hours": "알 수 없음"
+  },
+  {
+    "id": 290,
+    "duration_category": "추출 불가/미언급",
+    "duration_keywords": "언제부터 시작됐는지 파악 불가",
+    "onset_time": "미상",
+    "estimated_hours": "알 수 없음"
+  },
+  {
+    "id": 291,
+    "duration_category": "추출 불가/미언급",
+    "duration_keywords": "정확한 시작 시점 모름",
+    "onset_time": "미상",
+    "estimated_hours": "알 수 없음"
+  },
+  {
+    "id": 292,
+    "duration_category": "추출 불가/미언급",
+    "duration_keywords": "얼마나 지속됐는지 알 수 없음",
+    "onset_time": "미상",
+    "estimated_hours": "알 수 없음"
+  },
+  {
+    "id": 293,
+    "duration_category": "추출 불가/미언급",
+    "duration_keywords": "시간 정보 파악 불가",
+    "onset_time": "미상",
+    "estimated_hours": "알 수 없음"
+  },
+  {
+    "id": 294,
+    "duration_category": "추출 불가/미언급",
+    "duration_keywords": "몇 시간째인지 기억 불가",
+    "onset_time": "미상",
+    "estimated_hours": "알 수 없음"
+  }
+]

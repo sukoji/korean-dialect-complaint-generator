@@ -1,0 +1,1108 @@
+[
+  {
+    "id": 1,
+    "odor_category": "화학/약품/용제",
+    "odor_keywords": "화학약품 냄새",
+    "normalized_odor": "화학약품 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 2,
+    "odor_category": "화학/약품/용제",
+    "odor_keywords": "화공약품 냄새",
+    "normalized_odor": "화학약품 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 3,
+    "odor_category": "화학/약품/용제",
+    "odor_keywords": "신나 냄새",
+    "normalized_odor": "신나/용제 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 4,
+    "odor_category": "화학/약품/용제",
+    "odor_keywords": "페인트 냄새",
+    "normalized_odor": "페인트/도료 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 5,
+    "odor_category": "화학/약품/용제",
+    "odor_keywords": "락스 냄새",
+    "normalized_odor": "염소계 소독약 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 6,
+    "odor_category": "화학/약품/용제",
+    "odor_keywords": "소독약 냄새",
+    "normalized_odor": "소독약 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 7,
+    "odor_category": "화학/약품/용제",
+    "odor_keywords": "알코올 냄새",
+    "normalized_odor": "알코올성 용제 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 8,
+    "odor_category": "화학/약품/용제",
+    "odor_keywords": "플라스틱 녹는 냄새",
+    "normalized_odor": "플라스틱 열분해 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 9,
+    "odor_category": "화학/약품/용제",
+    "odor_keywords": "본드 냄새",
+    "normalized_odor": "접착제/용제 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 10,
+    "odor_category": "화학/약품/용제",
+    "odor_keywords": "접착제 냄새",
+    "normalized_odor": "접착제/용제 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 11,
+    "odor_category": "화학/약품/용제",
+    "odor_keywords": "비닐 냄새",
+    "normalized_odor": "플라스틱/비닐 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 12,
+    "odor_category": "화학/약품/용제",
+    "odor_keywords": "합성수지 냄새",
+    "normalized_odor": "합성수지 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 13,
+    "odor_category": "화학/약품/용제",
+    "odor_keywords": "플라스틱 수지 냄새",
+    "normalized_odor": "합성수지 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 14,
+    "odor_category": "화학/약품/용제",
+    "odor_keywords": "고무약품 냄새",
+    "normalized_odor": "고무/화학약품 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 15,
+    "odor_category": "화학/약품/용제",
+    "odor_keywords": "세척제 냄새",
+    "normalized_odor": "세척제 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 16,
+    "odor_category": "화학/약품/용제",
+    "odor_keywords": "공업용 세제 냄새",
+    "normalized_odor": "세제/계면활성제 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 17,
+    "odor_category": "화학/약품/용제",
+    "odor_keywords": "살충제 냄새",
+    "normalized_odor": "농약/살충제 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 18,
+    "odor_category": "화학/약품/용제",
+    "odor_keywords": "용제 냄새",
+    "normalized_odor": "휘발성 유기용제 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 19,
+    "odor_category": "화학/약품/용제",
+    "odor_keywords": "염산 냄새",
+    "normalized_odor": "산성 약품 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 20,
+    "odor_category": "화학/약품/용제",
+    "odor_keywords": "염소 냄새",
+    "normalized_odor": "염소계 약품 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 21,
+    "odor_category": "화학/약품/용제",
+    "odor_keywords": "아세톤 냄새",
+    "normalized_odor": "아세톤/용제 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 22,
+    "odor_category": "화학/약품/용제",
+    "odor_keywords": "화학 섬유 냄새",
+    "normalized_odor": "화학섬유 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 23,
+    "odor_category": "연소/탄내",
+    "odor_keywords": "탄내",
+    "normalized_odor": "타는 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 24,
+    "odor_category": "연소/탄내",
+    "odor_keywords": "타는 냄새",
+    "normalized_odor": "타는 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 25,
+    "odor_category": "연소/탄내",
+    "odor_keywords": "매캐한 타는 냄새",
+    "normalized_odor": "매캐한 연소 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 26,
+    "odor_category": "연소/탄내",
+    "odor_keywords": "불에 그을린 냄새",
+    "normalized_odor": "그을음 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 27,
+    "odor_category": "연소/탄내",
+    "odor_keywords": "그을음 냄새",
+    "normalized_odor": "그을음 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 28,
+    "odor_category": "연소/탄내",
+    "odor_keywords": "연기 냄새",
+    "normalized_odor": "연기 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 29,
+    "odor_category": "연소/탄내",
+    "odor_keywords": "매연 냄새",
+    "normalized_odor": "매연 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 30,
+    "odor_category": "연소/탄내",
+    "odor_keywords": "고무 타는 냄새",
+    "normalized_odor": "고무 연소 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 31,
+    "odor_category": "연소/탄내",
+    "odor_keywords": "타이어 타는 냄새",
+    "normalized_odor": "고무/타이어 연소 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 32,
+    "odor_category": "연소/탄내",
+    "odor_keywords": "비닐 타는 냄새",
+    "normalized_odor": "비닐 연소 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 33,
+    "odor_category": "연소/탄내",
+    "odor_keywords": "플라스틱 타는 냄새",
+    "normalized_odor": "플라스틱 연소 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 34,
+    "odor_category": "연소/탄내",
+    "odor_keywords": "합성수지 타는 냄새",
+    "normalized_odor": "플라스틱/합성수지 연소 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 35,
+    "odor_category": "연소/탄내",
+    "odor_keywords": "농비닐 타는 냄새",
+    "normalized_odor": "비닐 연소 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 36,
+    "odor_category": "연소/탄내",
+    "odor_keywords": "전선 타는 냄새",
+    "normalized_odor": "전기/전선 연소 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 37,
+    "odor_category": "연소/탄내",
+    "odor_keywords": "케이블 타는 냄새",
+    "normalized_odor": "전기/케이블 연소 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 38,
+    "odor_category": "연소/탄내",
+    "odor_keywords": "기름 타는 냄새",
+    "normalized_odor": "유류 연소 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 39,
+    "odor_category": "연소/탄내",
+    "odor_keywords": "연료 타는 냄새",
+    "normalized_odor": "연료 연소 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 40,
+    "odor_category": "연소/탄내",
+    "odor_keywords": "연탄 타는 냄새",
+    "normalized_odor": "연탄/석탄 연소 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 41,
+    "odor_category": "연소/탄내",
+    "odor_keywords": "석탄 타는 냄새",
+    "normalized_odor": "석탄 연소 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 42,
+    "odor_category": "연소/탄내",
+    "odor_keywords": "연탄재 냄새",
+    "normalized_odor": "연탄재 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 43,
+    "odor_category": "연소/탄내",
+    "odor_keywords": "나무 타는 냄새",
+    "normalized_odor": "목재 연소 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 44,
+    "odor_category": "연소/탄내",
+    "odor_keywords": "낙엽 타는 냄새",
+    "normalized_odor": "낙엽/목재 연소 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 45,
+    "odor_category": "연소/탄내",
+    "odor_keywords": "종이 타는 냄새",
+    "normalized_odor": "종이 연소 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 46,
+    "odor_category": "연소/탄내",
+    "odor_keywords": "쓰레기 타는 냄새",
+    "normalized_odor": "쓰레기/폐기물 연소 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 47,
+    "odor_category": "연소/탄내",
+    "odor_keywords": "소각 냄새",
+    "normalized_odor": "쓰레기/폐기물 연소 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 48,
+    "odor_category": "하수/황계",
+    "odor_keywords": "하수 냄새",
+    "normalized_odor": "하수 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 49,
+    "odor_category": "하수/황계",
+    "odor_keywords": "하수구 냄새",
+    "normalized_odor": "하수 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 50,
+    "odor_category": "하수/황계",
+    "odor_keywords": "오수 냄새",
+    "normalized_odor": "오수 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 51,
+    "odor_category": "하수/황계",
+    "odor_keywords": "오폐수 냄새",
+    "normalized_odor": "오폐수 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 52,
+    "odor_category": "하수/황계",
+    "odor_keywords": "폐수 냄새",
+    "normalized_odor": "폐수 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 53,
+    "odor_category": "하수/황계",
+    "odor_keywords": "정화조 냄새",
+    "normalized_odor": "정화조 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 54,
+    "odor_category": "하수/황계",
+    "odor_keywords": "배수구 냄새",
+    "normalized_odor": "배수구 악취",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 55,
+    "odor_category": "하수/황계",
+    "odor_keywords": "맨홀 냄새",
+    "normalized_odor": "하수 맨홀 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 56,
+    "odor_category": "하수/황계",
+    "odor_keywords": "하수 가스 냄새",
+    "normalized_odor": "하수 가스 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 57,
+    "odor_category": "하수/황계",
+    "odor_keywords": "시궁창 냄새",
+    "normalized_odor": "하수/부패 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 58,
+    "odor_category": "하수/황계",
+    "odor_keywords": "썩은 물 냄새",
+    "normalized_odor": "부패한 물 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 59,
+    "odor_category": "하수/황계",
+    "odor_keywords": "고인 물 썩는 냄새",
+    "normalized_odor": "고인 물 부패 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 60,
+    "odor_category": "하수/황계",
+    "odor_keywords": "물때 썩은 냄새",
+    "normalized_odor": "수계 부패 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 61,
+    "odor_category": "하수/황계",
+    "odor_keywords": "똥물 냄새",
+    "normalized_odor": "오수/분뇨성 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 62,
+    "odor_category": "하수/황계",
+    "odor_keywords": "계란 썩는 냄새",
+    "normalized_odor": "황화수소 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 63,
+    "odor_category": "하수/황계",
+    "odor_keywords": "썩은 계란 냄새",
+    "normalized_odor": "황화수소 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 64,
+    "odor_category": "하수/황계",
+    "odor_keywords": "황 냄새",
+    "normalized_odor": "황계 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 65,
+    "odor_category": "하수/황계",
+    "odor_keywords": "유황 냄새",
+    "normalized_odor": "황계 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 66,
+    "odor_category": "하수/황계",
+    "odor_keywords": "황화수소 냄새",
+    "normalized_odor": "황화수소 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 67,
+    "odor_category": "쓰레기/부패",
+    "odor_keywords": "쓰레기 냄새",
+    "normalized_odor": "쓰레기 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 68,
+    "odor_category": "쓰레기/부패",
+    "odor_keywords": "폐기물 냄새",
+    "normalized_odor": "폐기물 악취",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 69,
+    "odor_category": "쓰레기/부패",
+    "odor_keywords": "음식물 쓰레기 냄새",
+    "normalized_odor": "음식물 쓰레기 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 70,
+    "odor_category": "쓰레기/부패",
+    "odor_keywords": "음식물 썩는 냄새",
+    "normalized_odor": "음식물 부패 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 71,
+    "odor_category": "쓰레기/부패",
+    "odor_keywords": "썩은 음식 냄새",
+    "normalized_odor": "음식물 부패 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 72,
+    "odor_category": "쓰레기/부패",
+    "odor_keywords": "음식물 쉰내",
+    "normalized_odor": "음식물 부패 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 73,
+    "odor_category": "쓰레기/부패",
+    "odor_keywords": "김치 썩은 냄새",
+    "normalized_odor": "발효/부패 음식 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 74,
+    "odor_category": "쓰레기/부패",
+    "odor_keywords": "상한 반찬 냄새",
+    "normalized_odor": "상한 음식 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 75,
+    "odor_category": "쓰레기/부패",
+    "odor_keywords": "썩은 과일 냄새",
+    "normalized_odor": "과일 부패 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 76,
+    "odor_category": "쓰레기/부패",
+    "odor_keywords": "썩은 야채 냄새",
+    "normalized_odor": "채소 부패 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 77,
+    "odor_category": "쓰레기/부패",
+    "odor_keywords": "잔반 썩는 냄새",
+    "normalized_odor": "음식물 부패 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 78,
+    "odor_category": "쓰레기/부패",
+    "odor_keywords": "곰팡이 핀 음식 냄새",
+    "normalized_odor": "곰팡이/음식 부패 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 79,
+    "odor_category": "쓰레기/부패",
+    "odor_keywords": "곰팡이 냄새",
+    "normalized_odor": "곰팡이 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 80,
+    "odor_category": "쓰레기/부패",
+    "odor_keywords": "상한 우유 냄새",
+    "normalized_odor": "유제품 부패 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 81,
+    "odor_category": "쓰레기/부패",
+    "odor_keywords": "젖은 쓰레기 냄새",
+    "normalized_odor": "습한 쓰레기 악취",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 82,
+    "odor_category": "쓰레기/부패",
+    "odor_keywords": "썩은 곡물 냄새",
+    "normalized_odor": "곡물 부패 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 83,
+    "odor_category": "쓰레기/부패",
+    "odor_keywords": "상한 사료 냄새",
+    "normalized_odor": "사료 부패 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 84,
+    "odor_category": "쓰레기/부패",
+    "odor_keywords": "부패한 유기물 냄새",
+    "normalized_odor": "유기물 부패 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 85,
+    "odor_category": "쓰레기/부패",
+    "odor_keywords": "퇴비 썩는 냄새",
+    "normalized_odor": "퇴비/부패 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 86,
+    "odor_category": "분뇨/암모니아",
+    "odor_keywords": "분뇨 냄새",
+    "normalized_odor": "분뇨 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 87,
+    "odor_category": "분뇨/암모니아",
+    "odor_keywords": "똥 냄새",
+    "normalized_odor": "분변 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 88,
+    "odor_category": "분뇨/암모니아",
+    "odor_keywords": "가축분뇨 냄새",
+    "normalized_odor": "가축분뇨 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 89,
+    "odor_category": "분뇨/암모니아",
+    "odor_keywords": "소똥 냄새",
+    "normalized_odor": "소 분뇨 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 90,
+    "odor_category": "분뇨/암모니아",
+    "odor_keywords": "돼지 분뇨 냄새",
+    "normalized_odor": "돼지 분뇨 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 91,
+    "odor_category": "분뇨/암모니아",
+    "odor_keywords": "계분 냄새",
+    "normalized_odor": "닭 분뇨 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 92,
+    "odor_category": "분뇨/암모니아",
+    "odor_keywords": "축사 냄새",
+    "normalized_odor": "축사 악취",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 93,
+    "odor_category": "분뇨/암모니아",
+    "odor_keywords": "돼지우리 냄새",
+    "normalized_odor": "돼지 축사 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 94,
+    "odor_category": "분뇨/암모니아",
+    "odor_keywords": "닭장 냄새",
+    "normalized_odor": "양계장 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 95,
+    "odor_category": "분뇨/암모니아",
+    "odor_keywords": "암모니아 냄새",
+    "normalized_odor": "암모니아 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 96,
+    "odor_category": "분뇨/암모니아",
+    "odor_keywords": "오줌 지린내",
+    "normalized_odor": "소변/암모니아 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 97,
+    "odor_category": "분뇨/암모니아",
+    "odor_keywords": "화장실 냄새",
+    "normalized_odor": "화장실 악취",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 98,
+    "odor_category": "분뇨/암모니아",
+    "odor_keywords": "푸세식 화장실 냄새",
+    "normalized_odor": "분뇨/화장실 악취",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 99,
+    "odor_category": "분뇨/암모니아",
+    "odor_keywords": "비료 냄새",
+    "normalized_odor": "비료/암모니아 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 100,
+    "odor_category": "분뇨/암모니아",
+    "odor_keywords": "퇴비 냄새",
+    "normalized_odor": "퇴비/분뇨 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 101,
+    "odor_category": "분뇨/암모니아",
+    "odor_keywords": "거름 냄새",
+    "normalized_odor": "거름/퇴비 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 102,
+    "odor_category": "분뇨/암모니아",
+    "odor_keywords": "액비 냄새",
+    "normalized_odor": "액비/분뇨 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 103,
+    "odor_category": "분뇨/암모니아",
+    "odor_keywords": "축산 폐수 냄새",
+    "normalized_odor": "축산폐수 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 104,
+    "odor_category": "분뇨/암모니아",
+    "odor_keywords": "동물 배설물 냄새",
+    "normalized_odor": "동물 배설물 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 105,
+    "odor_category": "분뇨/암모니아",
+    "odor_keywords": "동물 사체 썩는 냄새",
+    "normalized_odor": "동물성 부패 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 106,
+    "odor_category": "수산/비린내",
+    "odor_keywords": "비린내",
+    "normalized_odor": "비린내",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 107,
+    "odor_category": "수산/비린내",
+    "odor_keywords": "물비린내",
+    "normalized_odor": "수계 비린내",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 108,
+    "odor_category": "수산/비린내",
+    "odor_keywords": "생선 비린내",
+    "normalized_odor": "생선 비린내",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 109,
+    "odor_category": "수산/비린내",
+    "odor_keywords": "오징어 굽는 냄새",
+    "normalized_odor": "오징어/수산물 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 110,
+    "odor_category": "수산/비린내",
+    "odor_keywords": "젓갈 냄새",
+    "normalized_odor": "젓갈/발효 수산 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 111,
+    "odor_category": "수산/비린내",
+    "odor_keywords": "멸치 액젓 냄새",
+    "normalized_odor": "액젓/수산 발효 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 112,
+    "odor_category": "수산/비린내",
+    "odor_keywords": "해산물 썩는 냄새",
+    "normalized_odor": "수산물 부패 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 113,
+    "odor_category": "수산/비린내",
+    "odor_keywords": "생선 내장 냄새",
+    "normalized_odor": "생선 부산물 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 114,
+    "odor_category": "수산/비린내",
+    "odor_keywords": "말린 생선 냄새",
+    "normalized_odor": "건어물 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 115,
+    "odor_category": "수산/비린내",
+    "odor_keywords": "건어물 썩는 냄새",
+    "normalized_odor": "건어물 부패 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 116,
+    "odor_category": "수산/비린내",
+    "odor_keywords": "상한 생선 냄새",
+    "normalized_odor": "생선 부패 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 117,
+    "odor_category": "수산/비린내",
+    "odor_keywords": "해초 썩는 냄새",
+    "normalized_odor": "해조류 부패 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 118,
+    "odor_category": "수산/비린내",
+    "odor_keywords": "물고기 썩는 냄새",
+    "normalized_odor": "어류 부패 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 119,
+    "odor_category": "수산/비린내",
+    "odor_keywords": "어패류 썩는 냄새",
+    "normalized_odor": "어패류 부패 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 120,
+    "odor_category": "수산/비린내",
+    "odor_keywords": "생선 기름 냄새",
+    "normalized_odor": "어유/생선기름 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 121,
+    "odor_category": "수산/비린내",
+    "odor_keywords": "수산 폐기물 냄새",
+    "normalized_odor": "수산폐기물 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 122,
+    "odor_category": "수산/비린내",
+    "odor_keywords": "마른 오징어 타는 냄새",
+    "normalized_odor": "수산물 연소 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 123,
+    "odor_category": "산업/타르/유류",
+    "odor_keywords": "타르 냄새",
+    "normalized_odor": "타르 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 124,
+    "odor_category": "산업/타르/유류",
+    "odor_keywords": "나프탈렌 냄새",
+    "normalized_odor": "나프탈렌 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 125,
+    "odor_category": "산업/타르/유류",
+    "odor_keywords": "기름 냄새",
+    "normalized_odor": "유류 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 126,
+    "odor_category": "산업/타르/유류",
+    "odor_keywords": "석유 냄새",
+    "normalized_odor": "석유계 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 127,
+    "odor_category": "산업/타르/유류",
+    "odor_keywords": "경유 냄새",
+    "normalized_odor": "경유 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 128,
+    "odor_category": "산업/타르/유류",
+    "odor_keywords": "휘발유 냄새",
+    "normalized_odor": "휘발유 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 129,
+    "odor_category": "산업/타르/유류",
+    "odor_keywords": "아스팔트 냄새",
+    "normalized_odor": "아스팔트 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 130,
+    "odor_category": "산업/타르/유류",
+    "odor_keywords": "아스콘 냄새",
+    "normalized_odor": "아스콘 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 131,
+    "odor_category": "산업/타르/유류",
+    "odor_keywords": "기계유 냄새",
+    "normalized_odor": "기계유 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 132,
+    "odor_category": "산업/타르/유류",
+    "odor_keywords": "윤활유 냄새",
+    "normalized_odor": "윤활유 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 133,
+    "odor_category": "산업/타르/유류",
+    "odor_keywords": "산패한 기름 냄새",
+    "normalized_odor": "산패유 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 134,
+    "odor_category": "산업/타르/유류",
+    "odor_keywords": "쇠 타는 냄새",
+    "normalized_odor": "금속 가열 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 135,
+    "odor_category": "산업/타르/유류",
+    "odor_keywords": "쇳물 타는 냄새",
+    "normalized_odor": "금속/철강 가열 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 136,
+    "odor_category": "산업/타르/유류",
+    "odor_keywords": "철 냄새",
+    "normalized_odor": "금속성 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 137,
+    "odor_category": "산업/타르/유류",
+    "odor_keywords": "쇳가루 냄새",
+    "normalized_odor": "금속 분진 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 138,
+    "odor_category": "산업/타르/유류",
+    "odor_keywords": "코크스 냄새",
+    "normalized_odor": "코크스 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 139,
+    "odor_category": "산업/타르/유류",
+    "odor_keywords": "제강 슬래그 냄새",
+    "normalized_odor": "금속/철강 공정 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 140,
+    "odor_category": "발효/산패/음식",
+    "odor_keywords": "간장 달이는 냄새",
+    "normalized_odor": "간장 가열 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 141,
+    "odor_category": "발효/산패/음식",
+    "odor_keywords": "간장 냄새",
+    "normalized_odor": "간장/발효 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 142,
+    "odor_category": "발효/산패/음식",
+    "odor_keywords": "된장 썩은 냄새",
+    "normalized_odor": "장류 발효 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 143,
+    "odor_category": "발효/산패/음식",
+    "odor_keywords": "발효 냄새",
+    "normalized_odor": "발효 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 144,
+    "odor_category": "발효/산패/음식",
+    "odor_keywords": "식초 냄새",
+    "normalized_odor": "산성 발효 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 145,
+    "odor_category": "발효/산패/음식",
+    "odor_keywords": "막걸리 쉰 냄새",
+    "normalized_odor": "주류/발효 산패 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 146,
+    "odor_category": "발효/산패/음식",
+    "odor_keywords": "쉰내",
+    "normalized_odor": "쉰 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 147,
+    "odor_category": "발효/산패/음식",
+    "odor_keywords": "상한 장 냄새",
+    "normalized_odor": "장류 부패 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 148,
+    "odor_category": "발효/산패/음식",
+    "odor_keywords": "묵은 장 냄새",
+    "normalized_odor": "장류 발효 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 149,
+    "odor_category": "발효/산패/음식",
+    "odor_keywords": "메주 띄우는 냄새",
+    "normalized_odor": "장류 발효 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 150,
+    "odor_category": "발효/산패/음식",
+    "odor_keywords": "삭힌 음식 냄새",
+    "normalized_odor": "삭힌 음식 발효 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 151,
+    "odor_category": "발효/산패/음식",
+    "odor_keywords": "양파 썩는 냄새",
+    "normalized_odor": "메틸메르캅탄/양파 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 152,
+    "odor_category": "발효/산패/음식",
+    "odor_keywords": "양파 냄새",
+    "normalized_odor": "양파/메르캅탄 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 153,
+    "odor_category": "발효/산패/음식",
+    "odor_keywords": "마늘 썩은 냄새",
+    "normalized_odor": "황계 유기물 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 154,
+    "odor_category": "발효/산패/음식",
+    "odor_keywords": "김치 국물 쉰 냄새",
+    "normalized_odor": "발효 음식 산패 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 155,
+    "odor_category": "발효/산패/음식",
+    "odor_keywords": "사료 발효 냄새",
+    "normalized_odor": "사료 발효 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 156,
+    "odor_category": "발효/산패/음식",
+    "odor_keywords": "메틸메르캅탄 냄새",
+    "normalized_odor": "메틸메르캅탄 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 157,
+    "odor_category": "분뇨/암모니아",
+    "odor_keywords": "지린내",
+    "normalized_odor": "소변/암모니아 냄새",
+    "generator_source": "curated_from_original"
+  },
+  {
+    "id": 158,
+    "odor_category": "분뇨/암모니아",
+    "odor_keywords": "구린내",
+    "normalized_odor": "분변성 악취",
+    "generator_source": "curated_from_original"
+  }
+]

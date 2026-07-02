@@ -1,0 +1,99 @@
+{
+  "slot_collect_prob": {
+    "location": 1.0,
+    "odor_type": 1.0,
+    "intensity_change": 0.9,
+    "duration": 0.9,
+    "cause_guess": 0.85
+  },
+  "pool_sampling": {
+    "locations": {
+      "strategy": "uniform",
+      "fallback": [
+        "아파트 근처",
+        "단지 앞",
+        "마을 입구"
+      ]
+    },
+    "odor_types": {
+      "strategy": "uniform",
+      "fallback": [
+        "매캐한 냄새",
+        "쓰레기 악취",
+        "분뇨 냄새"
+      ]
+    },
+    "intensity_changes": {
+      "strategy": "uniform",
+      "fallback": [
+        "저녁에 더 심해져요",
+        "심해짐",
+        "약해짐",
+        "변화없음"
+      ]
+    },
+    "durations": {
+      "strategy": "uniform",
+      "fallback": [
+        "오늘 아침부터",
+        "1~3일",
+        "매일반복",
+        "1주이상"
+      ]
+    },
+    "cause_guesses": {
+      "strategy": "uniform",
+      "fallback": [
+        "근처 공장이 의심돼요",
+        "잘 모르겠어요",
+        "하수처리장"
+      ]
+    }
+  },
+  "location_alias": {
+    "suffix_prob": 0.35,
+    "suffixes": [
+      " 근처",
+      " 앞",
+      " 인근",
+      " 맞은편"
+    ]
+  },
+  "place_asr": {
+    "apply_prob": 0.7,
+    "rules": [
+      "jamo_stt_noise",
+      "slur_hieung_second",
+      "drop_leading_syllable"
+    ],
+    "replacements": [
+      {
+        "from": "서희",
+        "to": "스히"
+      },
+      {
+        "from": "푸르지오",
+        "to": "프르지오"
+      },
+      {
+        "from": "e편한세상",
+        "to": "편한세상"
+      },
+      {
+        "from": "래미안",
+        "to": "레미안"
+      }
+    ],
+    "colloquial": {
+      "apply_prob": 0.88,
+      "max_spoken_chars": 22,
+      "suffix_prob": 0.72,
+      "suffixes": [
+        " 근처",
+        " 앞",
+        " 쪽",
+        " 인근"
+      ]
+    }
+  }
+}
