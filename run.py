@@ -224,6 +224,19 @@ def runtime_forbidden_block(region_name: str) -> str:
     return "\n".join(lines)
 
 
+def _auto_start_id(results_dir: Path) -> int:
+    """기존 results/comparison_*.csv들 중 최대 scenario_id + 1 (없으면 1)."""
+    max_id = 0
+    for p in results_dir.glob("comparison_*.csv"):
+        with open(p, encoding="utf-8-sig", newline="") as f:
+            for row in csv.DictReader(f):
+                try:
+                    max_id = max(max_id, int(row["scenario_id"]))
+                except (KeyError, ValueError, TypeError):
+                    pass
+    return max_id + 1
+
+
 # ── 메인 ─────────────────────────────────────────────────────────────
 def main() -> None:
     ap = argparse.ArgumentParser()
@@ -233,9 +246,17 @@ def main() -> None:
     ap.add_argument("--max-tokens", type=int, default=2500)
     ap.add_argument("--timeout", type=float, default=300.0)
     ap.add_argument("--workers", type=int, default=5)
-    ap.add_argument("--seed", type=int, default=20260612)
+    ap.add_argument("--seed", type=int, default=None, help="미지정 시 현재시각 기반 랜덤")
+    ap.add_argument("--start-id", type=int, default=None,
+                     help="미지정 시 results/comparison_*.csv 최대 scenario_id + 1부터 이어서 채번")
     ap.add_argument("--out", type=str, default=str(HERE / "results"))
     args = ap.parse_args()
+
+    if args.seed is None:
+        args.seed = int(time.time())
+    if args.start_id is None:
+        args.start_id = _auto_start_id(Path(args.out))
+    print(f"[설정] seed={args.seed} start_id={args.start_id}")
 
     load_env()
     have = {
@@ -265,7 +286,7 @@ def main() -> None:
     for i in range(args.n):
         region = regions[i % len(regions)]
         sc = sample_scenario(rng, region)
-        sc["scenario_id"] = i + 1
+        sc["scenario_id"] = args.start_id + i
         scenarios.append(sc)
 
     # 모든 (시나리오 × 모델) 작업 병렬 실행
