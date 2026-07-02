@@ -233,7 +233,11 @@ def main() -> None:
     ap.add_argument("--max-tokens", type=int, default=2500)
     ap.add_argument("--timeout", type=float, default=300.0)
     ap.add_argument("--workers", type=int, default=5)
-    ap.add_argument("--seed", type=int, default=20260612)
+    ap.add_argument(
+        "--seed", type=int, default=None,
+        help="난수 seed. 미지정 시 매 실행 랜덤(매번 다른 데이터). "
+             "특정 실행을 재현하려면 그때 출력된 seed 값을 지정.",
+    )
     ap.add_argument("--out", type=str, default=str(HERE / "results"))
     args = ap.parse_args()
 
@@ -258,7 +262,10 @@ def main() -> None:
     print(f"[모델] {len(models)}종: " + ", ".join(m[1] for m in models))
 
     template = (HERE / "prompts" / "prompt_template.txt").read_text(encoding="utf-8")
-    rng = random.Random(args.seed)
+    # seed 미지정 시 매 실행 랜덤(다양성). 어떤 seed로 돌았는지 출력해 재현 가능하게 남긴다.
+    seed = args.seed if args.seed is not None else random.SystemRandom().randrange(2**31)
+    print(f"[seed] {seed}" + (" (지정됨)" if args.seed is not None else " (랜덤 — 재현하려면 --seed {} )".format(seed)))
+    rng = random.Random(seed)
     regions = config.REGION_KEYS
     _ensure_orig_sampler()  # 데이터 파일 풀 사전 로드(첫 1회 수 초)
     scenarios = []
