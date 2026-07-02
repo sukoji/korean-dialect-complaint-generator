@@ -22,6 +22,7 @@ import sys
 import time
 import urllib.error
 import urllib.request
+import uuid
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime
 from pathlib import Path
@@ -272,7 +273,8 @@ def main() -> None:
     for i in range(args.n):
         region = regions[i % len(regions)]
         sc = sample_scenario(rng, region)
-        sc["scenario_id"] = i + 1
+        sc["scenario_id"] = i + 1          # 배치 내 순번(사람이 읽는 용)
+        sc["uid"] = str(uuid.uuid4())       # 전역 유일 ID(여러 실행/환경 병합 안전)
         scenarios.append(sc)
 
     # 모든 (시나리오 × 모델) 작업 병렬 실행
@@ -316,9 +318,9 @@ def main() -> None:
     # 비교 CSV (모델별 출력 컬럼, 한 시나리오 = 한 행)
     with open(csv_path, "w", encoding="utf-8-sig", newline="") as f:
         w = csv.writer(f)
-        w.writerow(input_cols + [f"out__{mid}" for mid in model_ids])
+        w.writerow(["uid"] + input_cols + [f"out__{mid}" for mid in model_ids])
         for sc in scenarios:
-            row = [sc[c] for c in input_cols]
+            row = [sc["uid"]] + [sc[c] for c in input_cols]
             for mid in model_ids:
                 r = results.get((sc["scenario_id"], mid), {})
                 row.append(r.get("text") if r.get("ok") else f"[ERROR] {r.get('error','')}")
@@ -330,6 +332,7 @@ def main() -> None:
             for provider, mid in models:
                 r = results.get((sc["scenario_id"], mid), {})
                 f.write(json.dumps({
+                    "uid": sc["uid"],
                     "scenario_id": sc["scenario_id"],
                     "provider": provider,
                     "model": mid,
