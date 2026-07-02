@@ -2,13 +2,19 @@
 """data/region_pools.json · data/location_pools.json 재생성 스크립트.
 
 배포판에는 원본 대형 파일(지명 마스터 CSV ~118MB, location.json ~294MB)을
-포함하지 않고, 여기서 미리 계산한 경량 풀만 data/ 에 넣는다. 원본을 갱신해
-풀을 다시 만들려면 아래 두 경로를 원본 위치로 지정한 뒤 실행한다.
+포함하지 않고, 여기서 미리 계산한 경량 풀만 data/ 에 넣는다.
 
-사용:
-    python tools/build_pools.py \
-        --toponym /path/to/지역별_지명_지역_도로명주소_통합_work.csv \
-        --location /path/to/location.json
+원본 두 파일을 별도로 전달받은 경우, 아래 고정 경로에 그대로 넣고 인자 없이 실행하면
+풀이 다시 생성된다(파일명 변경 불필요):
+
+    data/raw/지역별_지명_지역_도로명주소_통합_work.csv
+    data/raw/location.json
+
+    python tools/build_pools.py            # 위 고정 경로 자동 사용
+
+경로가 다르면 직접 지정:
+
+    python tools/build_pools.py --toponym <경로.csv> --location <경로.json>
 """
 from __future__ import annotations
 
@@ -23,6 +29,11 @@ sys.path.insert(0, str(HERE / "pipeline"))
 import odor_complaint_scenarios as O  # noqa: E402
 
 LOC_CAP = 4000  # 원인추정 위치 풀 권역당 상한
+
+# 원본 대형 파일을 별도로 받았을 때 넣어두는 고정 경로(파일명 그대로)
+_RAW_DIR = HERE / "data" / "raw"
+_DEFAULT_TOPONYM = _RAW_DIR / "지역별_지명_지역_도로명주소_통합_work.csv"
+_DEFAULT_LOCATION = _RAW_DIR / "location.json"
 
 
 def build_region_pools(toponym_csv: str) -> dict:
@@ -86,9 +97,22 @@ def build_location_pools(location_json: str) -> dict:
 
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--toponym", required=True, help="지명 마스터 CSV 경로")
-    ap.add_argument("--location", required=True, help="location.json 경로")
+    ap.add_argument(
+        "--toponym", default=str(_DEFAULT_TOPONYM),
+        help=f"지명 마스터 CSV 경로 (기본: {_DEFAULT_TOPONYM})",
+    )
+    ap.add_argument(
+        "--location", default=str(_DEFAULT_LOCATION),
+        help=f"location.json 경로 (기본: {_DEFAULT_LOCATION})",
+    )
     args = ap.parse_args()
+
+    for label, p in (("지명 마스터 CSV", args.toponym), ("location.json", args.location)):
+        if not Path(p).is_file():
+            sys.exit(
+                f"[중단] {label} 을(를) 찾을 수 없습니다: {p}\n"
+                f"  원본 파일을 data/raw/ 에 넣거나 --toponym/--location 으로 경로를 지정하세요."
+            )
 
     data_dir = HERE / "data"
     rp = build_region_pools(args.toponym)
