@@ -225,6 +225,25 @@ def runtime_forbidden_block(region_name: str) -> str:
     return "\n".join(lines)
 
 
+# ── 이어서 번호 매기기: 같은 출력 폴더의 기존 결과 마지막 번호 다음부터 ──
+def _max_existing_scenario_id(outdir: Path) -> int:
+    """출력 폴더의 기존 comparison_*.csv 를 훑어 최대 scenario_id 반환(없으면 0).
+    같은 폴더에 계속 쌓을 때 번호가 겹치지 않고 이어지게 한다."""
+    mx = 0
+    if not outdir.is_dir():
+        return 0
+    for p in outdir.glob("comparison_*.csv"):
+        try:
+            with open(p, encoding="utf-8-sig", newline="") as f:
+                for row in csv.DictReader(f):
+                    v = (row.get("scenario_id") or "").strip()
+                    if v.isdigit():
+                        mx = max(mx, int(v))
+        except Exception:
+            continue
+    return mx
+
+
 # ── 메인 ─────────────────────────────────────────────────────────────
 def main() -> None:
     ap = argparse.ArgumentParser()
@@ -269,12 +288,16 @@ def main() -> None:
     rng = random.Random(seed)
     regions = config.REGION_KEYS
     _ensure_orig_sampler()  # 데이터 파일 풀 사전 로드(첫 1회 수 초)
+    # 같은 출력 폴더에 이미 결과가 있으면 그 마지막 번호 다음부터 이어서 매긴다.
+    start_id = _max_existing_scenario_id(Path(args.out))
+    if start_id:
+        print(f"[이어서] 기존 최대 scenario_id={start_id} → {start_id + 1}번부터 부여")
     scenarios = []
     for i in range(args.n):
         region = regions[i % len(regions)]
         sc = sample_scenario(rng, region)
-        sc["scenario_id"] = i + 1          # 배치 내 순번(사람이 읽는 용)
-        sc["uid"] = str(uuid.uuid4())       # 전역 유일 ID(여러 실행/환경 병합 안전)
+        sc["scenario_id"] = start_id + i + 1  # 폴더 내 연속 번호(사람이 읽는 용)
+        sc["uid"] = str(uuid.uuid4())          # 전역 유일 ID(여러 실행/환경 병합 안전)
         scenarios.append(sc)
 
     # 모든 (시나리오 × 모델) 작업 병렬 실행
