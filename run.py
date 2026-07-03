@@ -225,23 +225,17 @@ def runtime_forbidden_block(region_name: str) -> str:
     return "\n".join(lines)
 
 
-# ── 이어서 번호 매기기: 같은 출력 폴더의 기존 결과 마지막 번호 다음부터 ──
-def _max_existing_scenario_id(outdir: Path) -> int:
-    """출력 폴더의 기존 comparison_*.csv 를 훑어 최대 scenario_id 반환(없으면 0).
-    같은 폴더에 계속 쌓을 때 번호가 겹치지 않고 이어지게 한다."""
-    mx = 0
-    if not outdir.is_dir():
-        return 0
-    for p in outdir.glob("comparison_*.csv"):
-        try:
-            with open(p, encoding="utf-8-sig", newline="") as f:
-                for row in csv.DictReader(f):
-                    v = (row.get("scenario_id") or "").strip()
-                    if v.isdigit():
-                        mx = max(mx, int(v))
-        except Exception:
-            continue
-    return mx
+def _auto_start_id(results_dir: Path) -> int:
+    """기존 results/comparison_*.csv들 중 최대 scenario_id + 1 (없으면 1)."""
+    max_id = 0
+    for p in results_dir.glob("comparison_*.csv"):
+        with open(p, encoding="utf-8-sig", newline="") as f:
+            for row in csv.DictReader(f):
+                try:
+                    max_id = max(max_id, int(row["scenario_id"]))
+                except (KeyError, ValueError, TypeError):
+                    pass
+    return max_id + 1
 
 
 # ── 메인 ─────────────────────────────────────────────────────────────
@@ -253,13 +247,17 @@ def main() -> None:
     ap.add_argument("--max-tokens", type=int, default=2500)
     ap.add_argument("--timeout", type=float, default=300.0)
     ap.add_argument("--workers", type=int, default=5)
-    ap.add_argument(
-        "--seed", type=int, default=None,
-        help="난수 seed. 미지정 시 매 실행 랜덤(매번 다른 데이터). "
-             "특정 실행을 재현하려면 그때 출력된 seed 값을 지정.",
-    )
+    ap.add_argument("--seed", type=int, default=None, help="미지정 시 현재시각 기반 랜덤")
+    ap.add_argument("--start-id", type=int, default=None,
+                     help="미지정 시 results/comparison_*.csv 최대 scenario_id + 1부터 이어서 채번")
     ap.add_argument("--out", type=str, default=str(HERE / "results"))
     args = ap.parse_args()
+
+    if args.seed is None:
+        args.seed = int(time.time())
+    if args.start_id is None:
+        args.start_id = _auto_start_id(Path(args.out))
+    print(f"[설정] seed={args.seed} start_id={args.start_id}")
 
     load_env()
     have = {
@@ -282,21 +280,14 @@ def main() -> None:
     print(f"[모델] {len(models)}종: " + ", ".join(m[1] for m in models))
 
     template = (HERE / "prompts" / "prompt_template.txt").read_text(encoding="utf-8")
-    # seed 미지정 시 매 실행 랜덤(다양성). 어떤 seed로 돌았는지 출력해 재현 가능하게 남긴다.
-    seed = args.seed if args.seed is not None else random.SystemRandom().randrange(2**31)
-    print(f"[seed] {seed}" + (" (지정됨)" if args.seed is not None else " (랜덤 — 재현하려면 --seed {} )".format(seed)))
-    rng = random.Random(seed)
+    rng = random.Random(args.seed)
     regions = config.REGION_KEYS
     _ensure_orig_sampler()  # 데이터 파일 풀 사전 로드(첫 1회 수 초)
-    # 같은 출력 폴더에 이미 결과가 있으면 그 마지막 번호 다음부터 이어서 매긴다.
-    start_id = _max_existing_scenario_id(Path(args.out))
-    if start_id:
-        print(f"[이어서] 기존 최대 scenario_id={start_id} → {start_id + 1}번부터 부여")
     scenarios = []
     for i in range(args.n):
         region = regions[i % len(regions)]
         sc = sample_scenario(rng, region)
-        sc["scenario_id"] = start_id + i + 1  # 폴더 내 연속 번호(사람이 읽는 용)
+        sc["scenario_id"] = args.start_id + i
         sc["uid"] = str(uuid.uuid4())          # 전역 유일 ID(여러 실행/환경 병합 안전)
         scenarios.append(sc)
 
