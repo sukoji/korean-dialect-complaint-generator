@@ -47,6 +47,25 @@ python run.py --n 100 --models claude-opus-4-8
 | `comparison_<시각>.csv` | 키워드(정답) + 생성된 대화 (모델별 컬럼) |
 | `raw_<시각>.jsonl` | 입력·출력·토큰 사용량 원본 |
 
+### (선택) 지역별 scenario_id 재번호
+
+`run.py`는 권역을 순환하며 배분하므로 지역별 `scenario_id`가 5, 10, 15...처럼
+띄엄띄엄 나옵니다. 지역 내에서 1부터 연속되게 정리하려면 생성 직후 아래를 실행:
+
+```bash
+python tools/renumber_scenarios.py     # results/ 안 최신 comparison_*.csv 사용
+```
+
+`comparison_<시각>_renumbered.csv`가 새로 생기고, 지역별 `scenario_id`가 1..N으로
+재번호됩니다(원본 CSV는 그대로 둠). CSV·텍스트만 다루는 스크립트이며, 오디오
+TTS 결과물과 이 CSV를 합쳐 최종 데이터셋 폴더를 만드는 건 별개의 오디오 쪽
+파이프라인의 몫입니다(이미 그 역할을 하는 코드가 있음 — 이 스크립트가 대신하지
+않습니다).
+
+> 여기서 정해지는 `scenario_id`(및 `uid`가 있으면 그 값도)는 이후 TTS 단계에서
+> 폴더명(`<지역>_id<번호>_min-..._sang-...`) 접두어로 그대로 쓰입니다. 재번호는
+> TTS를 돌리기 전에 해야 폴더명도 깔끔하게 나옵니다.
+
 ---
 
 ## ⚙️ 실행 옵션
@@ -100,7 +119,8 @@ korean-dialect-complaint-generator/
 │   └── raw/                         (선택) 원본 대형 지명 파일 두는 곳 → 아래 참고
 │
 └── tools/
-    └── build_pools.py         원본 대형 지명 DB → 경량 풀 재생성 스크립트
+    ├── build_pools.py         원본 대형 지명 DB → 경량 풀 재생성 스크립트
+    └── renumber_scenarios.py  comparison CSV의 지역별 scenario_id를 1..N 재번호
 ```
 
 ---
