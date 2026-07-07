@@ -309,6 +309,7 @@ def _scan_region_pools() -> Dict[str, Any]:
         "place": {k: tuple(v) for k, v in (data.get("place") or {}).items()},
         "cause": {k: tuple(v) for k, v in (data.get("cause") or {}).items()},
         "place_city": {k: dict(v) for k, v in (data.get("place_city") or {}).items()},
+        "cause_city": {k: dict(v) for k, v in (data.get("cause_city") or {}).items()},
     }
 
 
@@ -323,6 +324,11 @@ def _region_cause_pools() -> Dict[str, Tuple[str, ...]]:
 def _region_place_city_map(region: str) -> Dict[str, str]:
     """해당 권역의 place 이름 → 실제 소속 시·군(스캔 시점 기록)."""
     return _scan_region_pools()["place_city"].get(region) or {}
+
+
+def _region_cause_city_map(region: str) -> Dict[str, str]:
+    """해당 권역의 원인추정 시설 이름 → 실제 소속 시·군(스캔 시점 기록)."""
+    return _scan_region_pools()["cause_city"].get(region) or {}
 
 
 _CAUSE_PHRASES = (
@@ -649,10 +655,14 @@ def _sample_keyword_meta(
         ),
     }
     # 원인: 1M 권역 악취원시설에서 우선 추출(포항 고정 'cause_guesses' 탈피)
+    # 민원인 위치(city)와 같은 시·군 시설을 우선 사용 — 첫 문장 관할 지역과
+    # 원인추정 지역이 다른 시/군으로 튀는 것을 방지(place_city와 동일 패턴).
     if region_key:
         cause_pool = _region_cause_pools().get(region_key) or ()
         if cause_pool:
-            fac = _pick_from_pool(list(cause_pool), "cause_facilities", rng)
+            cause_cmap = _region_cause_city_map(region_key)
+            same_city = [c for c in cause_pool if cause_cmap.get(c) == city] if city else []
+            fac = _pick_from_pool(same_city or list(cause_pool), "cause_facilities", rng)
             if fac:
                 sampled["cause_guess"] = rng.choice(_CAUSE_PHRASES).format(fac)
     for key, fallback_key in (

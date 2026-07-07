@@ -48,6 +48,7 @@ def build_region_pools(toponym_csv: str) -> dict:
     place = {k: [] for k in O._REGION_LOC_PAT}
     cause = {k: [] for k in O._REGION_LOC_PAT}
     place_city = {k: {} for k in O._REGION_LOC_PAT}
+    cause_city = {k: {} for k in O._REGION_LOC_PAT}
     with open(toponym_csv, encoding="utf-8") as f:
         r = csv.reader(f)
         next(r, None)
@@ -75,12 +76,17 @@ def build_region_pools(toponym_csv: str) -> dict:
                             place_city[reg][place_name] = city
                 if is_cause and len(cause[reg]) < O._TOPONYM_PER_REGION_CAP:
                     cause[reg].append(name)
+                    if name not in cause_city[reg]:
+                        city = O._extract_city_from_loc(loc)
+                        if city:
+                            cause_city[reg][name] = city
                 break
     dedup = lambda v: list(dict.fromkeys(v))
     return {
         "place": {k: dedup(v) for k, v in place.items()},
         "cause": {k: dedup(v) for k, v in cause.items()},
         "place_city": place_city,
+        "cause_city": cause_city,
     }
 
 
