@@ -91,14 +91,24 @@ def build_region_pools(toponym_csv: str) -> dict:
 
 
 def build_location_pools(location_json: str) -> dict:
+    """원인추정 위치 풀(broad_region -> [place_name]) + 이름->실제 시/군 맵.
+
+    location.json의 location/road_address 컬럼에서 시/군을 뽑아 place_city와
+    동일한 방식으로 기록(odor_complaint_scenarios._extract_city_from_loc 재사용).
+    """
     entries = json.loads(Path(location_json).read_text(encoding="utf-8"))
     by = collections.defaultdict(list)
+    city = collections.defaultdict(dict)
     for e in entries:
         region = e.get("broad_region", "")
         name = (e.get("place_name") or "").strip()
         if region and name and len(by[region]) < LOC_CAP:
             by[region].append(name)
-    return dict(by)
+            if name not in city[region]:
+                c = O._extract_city_from_loc(e.get("location", "") or e.get("road_address", ""))
+                if c:
+                    city[region][name] = c
+    return {"pools": dict(by), "city": dict(city)}
 
 
 def main() -> None:
@@ -131,7 +141,7 @@ def main() -> None:
     (data_dir / "location_pools.json").write_text(
         json.dumps(lp, ensure_ascii=False), encoding="utf-8"
     )
-    print("location_pools.json:", {k: len(v) for k, v in lp.items()})
+    print("location_pools.json:", {k: len(v) for k, v in lp["pools"].items()})
 
 
 if __name__ == "__main__":
