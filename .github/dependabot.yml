@@ -1,0 +1,11 @@
+version: 2
+updates:
+  # GitHub Actions 버전 업데이트 (actions/checkout, setup-python 등)
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: weekly
+    labels:
+      - automerge
+    commit-message:
+      prefix: ci

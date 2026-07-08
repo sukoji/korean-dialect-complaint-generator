@@ -1,0 +1,39 @@
+name: Auto-merge
+
+# CI(ci.yml)가 통과하면 대상 PR을 자동으로 병합한다.
+# GitHub 네이티브 auto-merge를 켜는 방식이라, 실제 병합은
+# master 브랜치 보호 규칙에 걸린 필수 체크(=CI)가 모두 초록일 때만 일어난다.
+#
+# 대상 조건:
+#   - PR에 `automerge` 라벨이 붙어 있거나
+#   - Dependabot이 올린 PR (patch/minor 업데이트)
+# draft PR은 제외한다.
+
+on:
+  pull_request_target:
+    types: [labeled, opened, synchronize, reopened, ready_for_review]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: automerge-${{ github.event.pull_request.number }}
+  cancel-in-progress: false
+
+jobs:
+  automerge:
+    name: enable auto-merge
+    runs-on: ubuntu-latest
+    if: >-
+      github.event.pull_request.draft == false &&
+      (
+        contains(github.event.pull_request.labels.*.name, 'automerge') ||
+        github.event.pull_request.user.login == 'dependabot[bot]'
+      )
+    steps:
+      - name: Enable GitHub auto-merge
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_URL: ${{ github.event.pull_request.html_url }}
+        run: gh pr merge --auto --squash "$PR_URL"
