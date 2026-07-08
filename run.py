@@ -141,16 +141,24 @@ def _post(url: str, body: dict, headers: dict, provider: str, timeout: float, _t
 _ODOR = None
 _POOLS = None
 _LOCATION_POOLS: dict[str, list[str]] = {}  # broad_region -> [place_name, ...]
+_LOCATION_CITY: dict[str, dict[str, str]] = {}  # broad_region -> {place_name: 시/군}
 _LOCATION_POOLS_JSON = HERE / "data" / "location_pools.json"
 
 
 def _ensure_location_pools() -> dict[str, list[str]]:
     """원인추정 위치 풀 — 미리 계산한 data/location_pools.json 로드."""
-    global _LOCATION_POOLS
+    global _LOCATION_POOLS, _LOCATION_CITY
     if _LOCATION_POOLS:
         return _LOCATION_POOLS
-    _LOCATION_POOLS = json.loads(_LOCATION_POOLS_JSON.read_text(encoding="utf-8"))
+    data = json.loads(_LOCATION_POOLS_JSON.read_text(encoding="utf-8"))
+    _LOCATION_POOLS = data.get("pools") or {}
+    _LOCATION_CITY = data.get("city") or {}
     return _LOCATION_POOLS
+
+
+def _ensure_location_city_map() -> dict[str, dict[str, str]]:
+    _ensure_location_pools()
+    return _LOCATION_CITY
 
 
 def _ensure_orig_sampler():
@@ -188,6 +196,15 @@ def sample_scenario(rng: random.Random, region_key: str) -> dict:
     def keep(slot: str) -> bool:
         return rng.random() < config.SLOT_PROB[slot]
 
+    # 원인추정 위치: 민원인 위치(location_address)와 같은 시/군 후보를 우선
+    # 사용한다. 같은 시/군에 매칭되는 후보가 없으면 기존처럼 권역 전체 풀로
+    # 폴백(place_city/cause_city와 동일 패턴).
+    region_disp = config.REGION_DISPLAY.get(region_key, region_key)
+    loc_pool = _ensure_location_pools().get(region_disp, [""]) or [""]
+    loc_city_map = _ensure_location_city_map().get(region_disp) or {}
+    same_city = [n for n in loc_pool if loc_city_map.get(n) == location_address] if location_address else []
+    suspected_location_text = rng.choice(same_city or loc_pool)
+
     return {
         "region_name": config.REGION_DISPLAY.get(region_key, region_key),
         "location_address": location_address,
@@ -195,7 +212,7 @@ def sample_scenario(rng: random.Random, region_key: str) -> dict:
         "smell_type": (m.get("odor_type") or "").strip() if keep("smell_type") else config.UNMENTIONED,
         "smell_intensity": (m.get("intensity_change") or "").strip() if keep("smell_intensity") else config.UNMENTIONED,
         "smell_duration": (m.get("duration") or "").strip() if keep("smell_duration") else config.UNMENTIONED,
-        "suspected_location_text": rng.choice(_ensure_location_pools().get(config.REGION_DISPLAY.get(region_key, ""), [""]) or [""]) if keep("suspected") else config.UNMENTIONED,
+        "suspected_location_text": suspected_location_text if keep("suspected") else config.UNMENTIONED,
     }
 
 

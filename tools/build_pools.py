@@ -48,6 +48,7 @@ def build_region_pools(toponym_csv: str) -> dict:
     place = {k: [] for k in O._REGION_LOC_PAT}
     cause = {k: [] for k in O._REGION_LOC_PAT}
     place_city = {k: {} for k in O._REGION_LOC_PAT}
+    cause_city = {k: {} for k in O._REGION_LOC_PAT}
     with open(toponym_csv, encoding="utf-8") as f:
         r = csv.reader(f)
         next(r, None)
@@ -75,24 +76,39 @@ def build_region_pools(toponym_csv: str) -> dict:
                             place_city[reg][place_name] = city
                 if is_cause and len(cause[reg]) < O._TOPONYM_PER_REGION_CAP:
                     cause[reg].append(name)
+                    if name not in cause_city[reg]:
+                        city = O._extract_city_from_loc(loc)
+                        if city:
+                            cause_city[reg][name] = city
                 break
     dedup = lambda v: list(dict.fromkeys(v))
     return {
         "place": {k: dedup(v) for k, v in place.items()},
         "cause": {k: dedup(v) for k, v in cause.items()},
         "place_city": place_city,
+        "cause_city": cause_city,
     }
 
 
 def build_location_pools(location_json: str) -> dict:
+    """원인추정 위치 풀(broad_region -> [place_name]) + 이름->실제 시/군 맵.
+
+    location.json의 location/road_address 컬럼에서 시/군을 뽑아 place_city와
+    동일한 방식으로 기록(odor_complaint_scenarios._extract_city_from_loc 재사용).
+    """
     entries = json.loads(Path(location_json).read_text(encoding="utf-8"))
     by = collections.defaultdict(list)
+    city = collections.defaultdict(dict)
     for e in entries:
         region = e.get("broad_region", "")
         name = (e.get("place_name") or "").strip()
         if region and name and len(by[region]) < LOC_CAP:
             by[region].append(name)
-    return dict(by)
+            if name not in city[region]:
+                c = O._extract_city_from_loc(e.get("location", "") or e.get("road_address", ""))
+                if c:
+                    city[region][name] = c
+    return {"pools": dict(by), "city": dict(city)}
 
 
 def main() -> None:
@@ -125,7 +141,7 @@ def main() -> None:
     (data_dir / "location_pools.json").write_text(
         json.dumps(lp, ensure_ascii=False), encoding="utf-8"
     )
-    print("location_pools.json:", {k: len(v) for k, v in lp.items()})
+    print("location_pools.json:", {k: len(v) for k, v in lp["pools"].items()})
 
 
 if __name__ == "__main__":
