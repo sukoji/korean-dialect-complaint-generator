@@ -278,21 +278,29 @@ _METRO_CITY_RE = re.compile(r"^([가-힣]{2})(?:광역시|특별시|특별자치
 
 
 def _extract_city_from_loc(loc: str) -> str:
-    """'위치한 지역' 컬럼에서 실제 소속 도시 추출. 우선 시·군·구, 없으면
-    광역시·특별자치시 자체(대전·세종 등). 도(道)만 있으면 시가 모호하므로 빈값."""
+    """'위치한 지역' 컬럼에서 실제 소속 시·군·구 주소를 추출한다.
+
+    구만 반환하면 ``북구``·``서구``처럼 어느 도시인지 알 수 없으므로, 상위
+    광역시 또는 시와 함께 ``울산광역시 북구``·``포항시 북구``처럼 보존한다.
+    """
     toks = (loc or "").split()
-    for tok in toks:
-        if _METRO_SUFFIX_RE.search(tok) or tok.endswith("특별자치시"):
-            continue
-        # {1,10}: "남구"·"북구"처럼 1글자+구 짧은 구명도 잡아야 함(대구·부산·울산 등 흔함)
-        if re.match(r"^[가-힣]{1,10}(?:시|군|구)$", tok):
-            return tok
-    # 시·군·구가 없으면 광역시/특별자치시 자체를 도시로("대전광역시"→"대전")
-    for tok in toks:
-        m = _METRO_CITY_RE.match(tok)
-        if m:
-            return m.group(1)
-    return ""
+    metro = next(
+        (tok for tok in toks if _METRO_SUFFIX_RE.search(tok) or tok.endswith("특별자치시")),
+        "",
+    )
+    admins = [
+        tok for tok in toks
+        if not (_METRO_SUFFIX_RE.search(tok) or tok.endswith("특별자치시"))
+        and re.match(r"^[가-힣]{1,10}(?:시|군|구)$", tok)
+    ]
+    if metro:
+        return " ".join([metro, *admins[:1]]) if admins else metro
+    if not admins:
+        return ""
+    # "포항시 북구", "창원시 진해구"처럼 시 아래 구가 있으면 함께 저장한다.
+    if admins[0].endswith("시") and len(admins) > 1 and admins[1].endswith("구"):
+        return " ".join(admins[:2])
+    return admins[0]
 
 
 @lru_cache(maxsize=1)

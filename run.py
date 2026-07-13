@@ -181,9 +181,30 @@ def _ensure_orig_sampler():
 
 
 def sample_scenario(rng: random.Random, region_key: str) -> dict:
-    """참조 파일들에서 슬롯별 랜덤 1개 → 사용자 채택률대로 '미언급' 처리."""
+    """같은 시·군으로 검증된 위치·발생원 쌍을 샘플링한다."""
     O, pools = _ensure_orig_sampler()
-    m = O._sample_keyword_meta(pools, region_key, rng)  # 실제 파일에서 1개씩
+    region_disp = config.REGION_DISPLAY.get(region_key, region_key)
+    loc_pool = _ensure_location_pools().get(region_disp) or []
+    loc_city_map = _ensure_location_city_map().get(region_disp) or {}
+
+    # 원인추정 위치는 반드시 민원 위치와 같은 실제 시·군에 속해야 한다.
+    # 기존 구현은 같은 시·군 후보가 없을 때 권역 전체에서 다시 뽑아 불일치를
+    # 허용했다. 여기서는 원인추정 위치가 있는 시·군의 민원 위치만 채택한다.
+    m = None
+    same_city: list[str] = []
+    for _ in range(200):
+        candidate = O._sample_keyword_meta(pools, region_key, rng)
+        candidate_city = (candidate.get("location_city") or "").strip()
+        matches = [name for name in loc_pool if loc_city_map.get(name) == candidate_city]
+        if matches:
+            m = candidate
+            same_city = matches
+            break
+    if m is None:
+        raise RuntimeError(
+            f"{region_disp}: 같은 시·군으로 매칭 가능한 민원 위치·원인추정 위치 쌍이 없습니다."
+        )
+
     loc = (m.get("location") or "").strip()
     # location_city = _sample_keyword_meta가 loc 채택 시 이미 확인한 "실제" 소속
     # 시·군. 인사말 도시를 여기서 별도로 다시 추측하면(REGION_CITIES 5개 대표
@@ -196,14 +217,7 @@ def sample_scenario(rng: random.Random, region_key: str) -> dict:
     def keep(slot: str) -> bool:
         return rng.random() < config.SLOT_PROB[slot]
 
-    # 원인추정 위치: 민원인 위치(location_address)와 같은 시/군 후보를 우선
-    # 사용한다. 같은 시/군에 매칭되는 후보가 없으면 기존처럼 권역 전체 풀로
-    # 폴백(place_city/cause_city와 동일 패턴).
-    region_disp = config.REGION_DISPLAY.get(region_key, region_key)
-    loc_pool = _ensure_location_pools().get(region_disp, [""]) or [""]
-    loc_city_map = _ensure_location_city_map().get(region_disp) or {}
-    same_city = [n for n in loc_pool if loc_city_map.get(n) == location_address] if location_address else []
-    suspected_location_text = rng.choice(same_city or loc_pool)
+    suspected_location_text = rng.choice(same_city)
 
     return {
         "region_name": config.REGION_DISPLAY.get(region_key, region_key),

@@ -36,6 +36,11 @@ _DEFAULT_TOPONYM = _RAW_DIR / "지역별_지명_지역_도로명주소_통합_wo
 _DEFAULT_LOCATION = _RAW_DIR / "location.json"
 
 
+def _is_ambiguous_district(city: str) -> bool:
+    """상위 도시 없이 '북구'처럼 구만 기록된 주소인지 확인한다."""
+    return bool(city and city.endswith("구") and " " not in city)
+
+
 def build_region_pools(toponym_csv: str) -> dict:
     """지명 마스터 CSV → 권역별 place/cause 풀 + place_city 맵.
 
@@ -72,13 +77,13 @@ def build_region_pools(toponym_csv: str) -> dict:
                     place[reg].append(place_name)
                     if place_name not in place_city[reg]:
                         city = O._extract_city_from_loc(loc)
-                        if city:
+                        if city and not _is_ambiguous_district(city):
                             place_city[reg][place_name] = city
                 if is_cause and len(cause[reg]) < O._TOPONYM_PER_REGION_CAP:
                     cause[reg].append(name)
                     if name not in cause_city[reg]:
                         city = O._extract_city_from_loc(loc)
-                        if city:
+                        if city and not _is_ambiguous_district(city):
                             cause_city[reg][name] = city
                 break
     dedup = lambda v: list(dict.fromkeys(v))
@@ -106,7 +111,7 @@ def build_location_pools(location_json: str) -> dict:
             by[region].append(name)
             if name not in city[region]:
                 c = O._extract_city_from_loc(e.get("location", "") or e.get("road_address", ""))
-                if c:
+                if c and not _is_ambiguous_district(c):
                     city[region][name] = c
     return {"pools": dict(by), "city": dict(city)}
 

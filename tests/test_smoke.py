@@ -15,6 +15,8 @@ if str(PIPELINE) not in sys.path:
 
 import config  # noqa: E402
 import odor_complaint_scenarios as O  # noqa: E402
+sys.path.insert(0, str(ROOT))
+import run  # noqa: E402
 
 
 class SmokeTest(unittest.TestCase):
@@ -49,6 +51,30 @@ class SmokeTest(unittest.TestCase):
             with self.subTest(region=region):
                 self.assertIn(region, place_pools)
                 self.assertGreater(len(place_pools[region]), 0)
+
+    def test_sampled_suspected_location_matches_location_city(self) -> None:
+        rng = random.Random(20260713)
+        for region in config.REGION_KEYS:
+            for _ in range(20):
+                with self.subTest(region=region):
+                    scenario = run.sample_scenario(rng, region)
+                    if scenario["suspected_location_text"] == config.UNMENTIONED:
+                        continue
+                    city_map = run._ensure_location_city_map()[scenario["region_name"]]
+                    self.assertEqual(
+                        scenario["location_address"],
+                        city_map[scenario["suspected_location_text"]],
+                    )
+
+    def test_location_city_is_not_a_bare_district(self) -> None:
+        data = json.loads((ROOT / "data" / "location_pools.json").read_text(encoding="utf-8"))
+        for region, city_map in (data.get("city") or {}).items():
+            for place, city in city_map.items():
+                with self.subTest(region=region, place=place):
+                    self.assertFalse(
+                        city.endswith("구") and " " not in city,
+                        f"상위 도시 없이 구만 저장됨: {city}",
+                    )
 
 
 if __name__ == "__main__":
